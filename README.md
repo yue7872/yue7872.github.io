@@ -1,7 +1,7 @@
 # myblog
 此项目是 `hexo+github` 搭建的个人博客，用于记录学习日常和心得。
 
-### 博客地址 [myblog](yue7872.github.io)
+### 博客地址 [myblog](https://yue7872.github.io)
 
 - master分支为hexo生成并部署的静态资源分支，主要是博客的html文件。
 - hexo分支为hexo部署之前的源文件（md）。
