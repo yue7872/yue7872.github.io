@@ -16,7 +16,7 @@
 <meta property="og:image" content="http://example.com/2021/03/26/img/type1.png">
 <meta property="og:image" content="http://example.com/2021/03/26/img/type2.png">
 <meta property="article:published_time" content="2021-03-26T08:31:14.000Z">
-<meta property="article:modified_time" content="2021-03-26T10:22:14.238Z">
+<meta property="article:modified_time" content="2021-03-27T10:10:25.723Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/2021/03/26/img/type1.png">
@@ -117,7 +117,29 @@
 <li>BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素，反之也是如此。</li>
 <li>计算BFC的高度时，浮动元素也会参与。</li>
 </ul>
-<h3 id="BFC的作用"><a href="#BFC的作用" class="headerlink" title="BFC的作用"></a>BFC的作用</h3><p>1、利用BFC避免margin重叠</p>
+<h3 id="如何创建BFC（下列条件满足一个即可生成BFC）"><a href="#如何创建BFC（下列条件满足一个即可生成BFC）" class="headerlink" title="如何创建BFC（下列条件满足一个即可生成BFC）"></a>如何创建BFC（下列条件满足一个即可生成BFC）</h3><ul>
+<li>float的值不是none；</li>
+<li>position的值不是static或者relative；</li>
+<li>display的值为inline-block、table-cell、flex、table-caption或者inline-flex；</li>
+<li>overflow的值不是visible。</li>
+<li><h3 id="BFC的作用"><a href="#BFC的作用" class="headerlink" title="BFC的作用"></a>BFC的作用</h3>1、利用BFC避免margin重叠<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">*&#123;</span><br><span class="line">        margin: 0;</span><br><span class="line">        padding: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    p &#123;</span><br><span class="line">        color: <span class="comment">#f55;</span></span><br><span class="line">        background: yellow;</span><br><span class="line">        width: 200px;</span><br><span class="line">        line-height: 100px;</span><br><span class="line">        text-align:center;</span><br><span class="line">        margin: 30px;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;p&gt;看看我的 margin是多少&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;看看我的 margin是多少&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>这两个p属于同一个BFC所以会发生margin重叠，所以想避免margin重叠可以设置它们分属于不同BFC。可以把第二个p用div包裹起来，激活这个div使之成为BFC。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=<span class="string">&quot;overflow:hidden;&quot;</span>&gt;</span><br><span class="line">	&lt;p&gt;看看我的 margin是多少&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>2、自适应两栏布局<br>根据：</p>
+<ul>
+<li>每个盒子（块盒与行盒）的margin box的左边，与包含块border box的左边相接触（对于从左往右的格式化，否则相反）。即使存在浮动也是如此。</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">    *&#123;</span><br><span class="line">        margin: 0;</span><br><span class="line">        padding: 0;</span><br><span class="line">    &#125;</span><br><span class="line">    body &#123;</span><br><span class="line">        width: 100%;</span><br><span class="line">        position: relative;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    .left &#123;</span><br><span class="line">        width: 100px;</span><br><span class="line">        height: 150px;</span><br><span class="line">        <span class="built_in">float</span>: left;</span><br><span class="line">        background: rgb(139, 214, 78);</span><br><span class="line">        text-align: center;</span><br><span class="line">        line-height: 150px;</span><br><span class="line">        font-size: 20px;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    .right &#123;</span><br><span class="line">        height: 300px;</span><br><span class="line">        background: rgb(170, 54, 236);</span><br><span class="line">        text-align: center;</span><br><span class="line">        line-height: 300px;</span><br><span class="line">        font-size: 40px;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div class=<span class="string">&quot;left&quot;</span>&gt;LEFT&lt;/div&gt;</span><br><span class="line">    &lt;div class=<span class="string">&quot;right&quot;</span>&gt;RIGHT&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+
+<p>再根据：<strong>BFC的区域不会与float box重叠</strong><br>我们让right单独成为一个BFC，给right加上<code>overflow:hidden;</code>；注意不要设置width；<br>这时right会自动适应宽度，形成两栏自适应布局。<br>如果是三栏自适应布局，则加一个div（float设置为right），注意要写在right前面，先于right渲染占位置。<br><em>注：</em> 设置高度充满屏幕的方法：</p>
+<ul>
+<li>设置html、body、div的height为100%；</li>
+<li>设置div高度为100%，position为absolute；（float失效）</li>
+<li>设置div高度100vh；    </li>
+</ul>
+<p>3、清除浮动<br>如果父节点不设定高度，子节点设置浮动的时候，会发生高度塌陷，这时可利用BFC清除浮动。<br>原理：<br>计算BFC的高度时，浮动元素也参与计算。（注意是给父节点激活BFC）</p>
 
       
     </div>
@@ -131,6 +153,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2021/04/01/reverseString/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          字符串翻转
+        
+      </div>
+    </a>
   
   
     <a href="/2021/03/22/js_reading6/" id="article-nav-older" class="article-nav-link-wrap">
@@ -160,7 +191,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
     </div>
   </div>
 
@@ -173,23 +204,23 @@
       <ul>
         
           <li>
+            <a href="/2021/04/06/canvas/">canvas相关</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/01/Array/">数组操作</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/01/reverseString/">字符串翻转</a>
+          </li>
+        
+          <li>
             <a href="/2021/03/26/view/">前端面试问题整理</a>
           </li>
         
           <li>
             <a href="/2021/03/22/js_reading6/">js读书笔记系列（六）</a>
-          </li>
-        
-          <li>
-            <a href="/2021/03/22/js_reading5/">js读书笔记系列（五）</a>
-          </li>
-        
-          <li>
-            <a href="/2021/03/21/cssPercentageReference/">css百分比参照</a>
-          </li>
-        
-          <li>
-            <a href="/2021/03/21/clear/">清除浮动的方法</a>
           </li>
         
       </ul>
