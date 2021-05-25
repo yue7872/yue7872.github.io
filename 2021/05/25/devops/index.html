@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>什么是DevOps | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="瀑布式开发​        一个软件从零开始到最终交付，大致要经历：规划、编码、构建、测试、发布、部署和维护。最初程序简单的时候，程序员一人就能完成所有阶段的工作。而当软件产业不断发展，出现精细化分工，如开发、测试、运维等。于是由原先的程序员一人完成工作，转变成了传统的软件开发流程： ​        开发花费大量时间编写代码，然后把代码交给QA进行测试，再将最终的发布版本交给运维团队去部署。即开">
+<meta property="og:type" content="article">
+<meta property="og:title" content="什么是DevOps">
+<meta property="og:url" content="http://example.com/2021/05/25/devops/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="瀑布式开发​        一个软件从零开始到最终交付，大致要经历：规划、编码、构建、测试、发布、部署和维护。最初程序简单的时候，程序员一人就能完成所有阶段的工作。而当软件产业不断发展，出现精细化分工，如开发、测试、运维等。于是由原先的程序员一人完成工作，转变成了传统的软件开发流程： ​        开发花费大量时间编写代码，然后把代码交给QA进行测试，再将最终的发布版本交给运维团队去部署。即开">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/截屏2021-05-20%20下午5.12.51.png">
+<meta property="og:image" content="http://example.com/img/截屏2021-05-20%20下午4.51.38.png">
+<meta property="og:image" content="http://example.com/img/截屏2021-05-20%20下午5.26.30.png">
+<meta property="og:image" content="http://example.com/img/截屏2021-05-20%20下午5.32.13.png">
+<meta property="article:published_time" content="2021-05-24T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-05-25T03:33:44.233Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/截屏2021-05-20%20下午5.12.51.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-devops" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/05/25/devops/" class="article-date">
+  <time class="dt-published" datetime="2021-05-24T16:00:00.000Z" itemprop="datePublished">2021-05-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      什么是DevOps
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="瀑布式开发"><a href="#瀑布式开发" class="headerlink" title="瀑布式开发"></a>瀑布式开发</h3><p>​        一个软件从零开始到最终交付，大致要经历：规划、编码、构建、测试、发布、部署和维护。最初程序简单的时候，程序员一人就能完成所有阶段的工作。而当软件产业不断发展，出现精细化分工，如开发、测试、运维等。于是由原先的程序员一人完成工作，转变成了传统的软件开发流程：</p>
+<p>​        开发花费大量时间编写代码，然后把代码交给QA进行测试，再将最终的发布版本交给运维团队去部署。即开发 =&gt;测试=&gt;部署。这种早期采用的软件交付模型，被称为<strong>瀑布模型</strong>。简而言之，就是等一个阶段所有工作完成之后才进入下一个阶段，而当用户对系统的需求不断增加，给的时间周期越来越短的时候，瀑布式开发就显得笨重而又迟缓。</p>
+<h3 id="敏捷开发"><a href="#敏捷开发" class="headerlink" title="敏捷开发"></a>敏捷开发</h3><p>​        敏捷开发是一种能应对快速变化需求的软件开发能力。简单来说，就是把大项目变成小项目，把大时间点变成小时间点。就像这样：</p>
+<img src="/img/截屏2021-05-20 下午5.12.51.png" alt="敏捷开发" style="zoom:50%;" />
+
+<p>​        比较流行的案例是scrum、XP极限编程。在新迭代（一般2-6周）开始前，产品经理将需求拆分成具体的开发任务，研发人员进行任务认领，每日会进行任务的review，直至开发完成，发布新的可用版本。</p>
+<p>​        虽然敏捷开发大幅提高了开发效率和版本更新速度，但是它的效果仅限于开发环节。在运维那边，依旧是铁板一块，成为新的瓶颈。运维的核心诉求就是<em>稳定压倒一切</em>，运维非常排斥改变（因为容易出问题），而敏捷开发就是不断改变的过程，这就造成了两者的矛盾。</p>
+<h3 id="DevOps"><a href="#DevOps" class="headerlink" title="DevOps"></a>DevOps</h3><p>​        DevOps集文化理念、实践和工具于一身。可以提高组织交付应用程序和服务的能力。与使用传统软件和基础设施管理流程相比，能够帮助组织更快的发展和改进产品。这种速度使组织更好的服务其客户，并在市场上高效的参与竞争。</p>
+<p>​        DevOps是一组过程、方法与系统的统称，用于促进开发、技术运营和质量保障部门（QA）之间的沟通、协作与整合。</p>
+<img src="/img/截屏2021-05-20 下午4.51.38.png" alt="DevOps" style="zoom:20%;" />
+
+<p>​        <strong>DevOps</strong> = development + Operation，它就是让开发人员和运维人员更好的沟通合作，通过<strong>自动化流程</strong>来使得软件整体过程更加快捷可靠。在devops下，我们需要重新梳理全流程的规范和标准。</p>
+<p>​        在这个流程下，运维人员会在项目开发期间就介入到开发过程中，了解开发人员使用的系统架构和技术路线，从而制定适当的运维方案。而开发人员也会在运维的初期参与到系统的部署中，并提供系统部署的优化建议。DevOps贯穿了软件整个生命周期，而不仅限于开发阶段。</p>
+<img src="/img/截屏2021-05-20 下午5.26.30.png" alt="DevOps与其他模式" style="zoom:50%;" />
+
+<p>​        DevOps这样的开发模型，需要持续开发、持续集成（CI）、持续测试、持续部署/交付（CD）、持续监控，每一次代码改动都会触发一次校验，每天每时每刻都可进行新版本的上线。</p>
+<img src="/img/截屏2021-05-20 下午5.32.13.png" alt="DevOps" style="zoom:50%;" />
+
+<p>​        <strong>持续集成（CI）</strong>开发人员提交了新代码之后，立刻进行构建、（单元）测试。根据测试结果，我们可以确定新代码和原有代码能否正确地集成在一起。</p>
+<p>​        <strong>持续交付（CD）</strong>完成单元测试后，可以把代码部署到连接数据库的 Staging 环境中更多的测试。如果代码没有问题，可以继续手动部署到生产环境中。</p>
+<p>​        我们认为：<strong>为了帮助研发团队在保持质量的前提下提高交付效率的方法和方法论都隶属于DevOps的范畴</strong>。</p>
+<h3 id="Google提出了5个DevOps原则："><a href="#Google提出了5个DevOps原则：" class="headerlink" title="Google提出了5个DevOps原则："></a>Google提出了5个DevOps原则：</h3><ol>
+<li>精简组织结构</li>
+<li>愿意承担一部分试错带来的损失；</li>
+<li>分阶段地一小步一小步地进行转型；</li>
+<li>最大化地利用工具和自动化流程；</li>
+<li>对所有的过程和结果进行记录和分析。</li>
+</ol>
+<h3 id="DevOps-中的一套成熟的运维系统包括什么？"><a href="#DevOps-中的一套成熟的运维系统包括什么？" class="headerlink" title="DevOps 中的一套成熟的运维系统包括什么？"></a>DevOps 中的一套成熟的运维系统包括什么？</h3><ul>
+<li>自动化测试</li>
+<li>批量配置基础组件</li>
+<li>监控，告警</li>
+<li>数据可视化</li>
+<li>协同合作</li>
+</ul>
+<p>一套成熟的运维系统，能够将应用、网络、计算、存储、虚拟化等资源的性能以及告警信息进行综合分析，通过简洁易懂的界面，直观呈现业务健康水平。当出现故障时，能够第一时间受到信息，从监控相关信息确定问题位置，缩小故障定位范围，确定问题是在计算、应用还是网络，进而明确问题职责，让相应的开发运维迅速处理问题，没有推脱责任之嫌。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/05/25/devops/" data-id="ckp3ftj700003zuop6hpi5a5a" data-title="什么是DevOps" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/05/25/React%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%953/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          React学习记录3：事件处理
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/05/24/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">May 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/05/25/React%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%951/">React学习记录1：JSX与组件</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/25/React%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%952/">React学习记录2：State&amp;生命周期</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/25/React%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%953/">React学习记录3：事件处理</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/25/devops/">什么是DevOps</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/24/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
