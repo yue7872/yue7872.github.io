@@ -1,2 +1,5 @@
 /* Here is your custom css styles. */
-.vinput {color: red;}
+.v .vwrap .vheader .vinput:focus {
+	border-bottom:1px solid lightgrey !important;
+	-webkit-box-shadow: 0 1px 0 0 transparent;
+}
