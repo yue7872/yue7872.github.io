@@ -43,20 +43,21 @@
 
     <!-- OpenGraph -->
  
-    <meta name="description" content="Cards主题用了一段时间花里胡哨的    Matery    感觉看起来很乱，也不太适合一个干净整洁的博客，于是换了个主题，叫cards，这里是链接：Cards   . 使用文档比较具体，就不记录怎么使用了，记录一下踩的坑。 使用的评论系统文档：https:&#x2F;&#x2F;minivaline.js.org&#x2F;docs&#x2F;v5&#x2F;cn&#x2F;#&#x2F; 1、代码高亮在设置代码高亮的时候，照着官方教程走了一遍，发现显示不出来我">
+    <meta name="description" content="Cards主题用了一段时间花里胡哨的    Matery    感觉看起来很乱，也不太适合一个干净整洁的博客，于是换了个主题，叫cards，这里是链接：Cards   . 使用文档比较具体，就不记录怎么使用了，记录一下踩的坑。 1、评论系统 minivaline使用的评论系统文档：https:&#x2F;&#x2F;minivaline.js.org&#x2F;docs&#x2F;v5&#x2F;cn&#x2F;#&#x2F; 配置如下： # MiniValine">
 <meta property="og:type" content="article">
 <meta property="og:title" content="cards主题">
 <meta property="og:url" content="http://yue7872.github.io/2021/06/22/cards-theme/index.html">
 <meta property="og:site_name" content="yyzBlog">
-<meta property="og:description" content="Cards主题用了一段时间花里胡哨的    Matery    感觉看起来很乱，也不太适合一个干净整洁的博客，于是换了个主题，叫cards，这里是链接：Cards   . 使用文档比较具体，就不记录怎么使用了，记录一下踩的坑。 使用的评论系统文档：https:&#x2F;&#x2F;minivaline.js.org&#x2F;docs&#x2F;v5&#x2F;cn&#x2F;#&#x2F; 1、代码高亮在设置代码高亮的时候，照着官方教程走了一遍，发现显示不出来我">
+<meta property="og:description" content="Cards主题用了一段时间花里胡哨的    Matery    感觉看起来很乱，也不太适合一个干净整洁的博客，于是换了个主题，叫cards，这里是链接：Cards   . 使用文档比较具体，就不记录怎么使用了，记录一下踩的坑。 1、评论系统 minivaline使用的评论系统文档：https:&#x2F;&#x2F;minivaline.js.org&#x2F;docs&#x2F;v5&#x2F;cn&#x2F;#&#x2F; 配置如下： # MiniValine">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yue7872.github.io/img/miniValine.png">
 <meta property="og:image" content="http://yue7872.github.io/img/cardsHightlight.png">
 <meta property="article:published_time" content="2021-06-22T07:05:32.000Z">
-<meta property="article:modified_time" content="2021-06-22T10:50:42.861Z">
+<meta property="article:modified_time" content="2021-06-22T14:49:41.023Z">
 <meta property="article:author" content="blairyue">
 <meta property="article:tag" content="themes">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://yue7872.github.io/img/cardsHightlight.png">
+<meta name="twitter:image" content="http://yue7872.github.io/img/miniValine.png">
 
 
     
@@ -172,8 +173,41 @@
     <div class="post__header"></div>
     <div class="post__content">
         <h2 id="Cards主题"><a href="#Cards主题" class="headerlink" title="Cards主题"></a>Cards主题</h2><p>用了一段时间花里胡哨的    <a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">Matery</a>    感觉看起来很乱，也不太适合一个干净整洁的博客，于是换了个主题，叫cards，这里是链接：<a target="_blank" rel="noopener" href="https://theme-cards.ichr.me/">Cards</a>   . 使用文档比较具体，就不记录怎么使用了，记录一下踩的坑。</p>
-<p>使用的评论系统文档：<a target="_blank" rel="noopener" href="https://minivaline.js.org/docs/v5/cn/#/">https://minivaline.js.org/docs/v5/cn/#/</a></p>
-<h3 id="1、代码高亮"><a href="#1、代码高亮" class="headerlink" title="1、代码高亮"></a>1、代码高亮</h3><p>在设置代码高亮的时候，照着官方教程走了一遍，发现显示不出来我引入的css样式，后来在<code>head</code>里发现这么一句话：</p>
+<h3 id="1、评论系统-minivaline"><a href="#1、评论系统-minivaline" class="headerlink" title="1、评论系统 minivaline"></a>1、评论系统 minivaline</h3><p>使用的评论系统文档：<a target="_blank" rel="noopener" href="https://minivaline.js.org/docs/v5/cn/#/">https://minivaline.js.org/docs/v5/cn/#/</a></p>
+<p>配置如下：</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token comment"># MiniValine</span>
+<span class="token key atrule">minivaline</span><span class="token punctuation">:</span>  
+  <span class="token key atrule">appId</span><span class="token punctuation">:</span> t8ltzv6dfc6LY2PyUHg63qji<span class="token punctuation">-</span>gzGzoHsz
+  <span class="token key atrule">appKey</span><span class="token punctuation">:</span> kLUU303uYNpQC2FUrzrWiBAi
+  <span class="token key atrule">mode</span><span class="token punctuation">:</span> xCss    <span class="token comment">#xCss</span>
+  <span class="token key atrule">avatarD</span><span class="token punctuation">:</span> retro
+  <span class="token key atrule">math</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">enableFlag</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">master</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'85947f1b17a8c872e90bc01764a99268'</span><span class="token punctuation">]</span>
+  <span class="token key atrule">tagMeta</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'博主'</span><span class="token punctuation">,</span><span class="token string">"小伙伴"</span><span class="token punctuation">,</span><span class="token string">"访客"</span><span class="token punctuation">]</span>
+  <span class="token key atrule">placeholder</span><span class="token punctuation">:</span> <span class="token string">"留个评论再走吧！"</span>
+  <span class="token key atrule">md</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">region</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">enableUA</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">RecordIP</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">pageSize</span><span class="token punctuation">:</span> <span class="token number">6</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<ul>
+<li><p>其中appId和appKey都是在leancloud中获取。</p>
+</li>
+<li><p>enableFlag设置为true后，填写master的邮箱（md5加密后的），可自动带上flag标志。</p>
+</li>
+<li><p>region设置为true后，需要修改js文件，下载minivaline的js文件，这个主题用的是很早的版本，所以要下这个版本，在里面修改。（最新版本的minivaline需要配置后端，我懒得弄 ）</p>
+<p>修改如下：</p>
+<p><img src="/img/miniValine.png" alt="miniValine"></p>
+<p>即在html里生成region信息。</p>
+</li>
+<li><p>设置参数minivaline.pageSize时，若设置为超过6的数，则会报错409。原因是leancloud里该应用最大工作线程数限制为6，当一页显示评论数大于6时，就会报请求过多的错误。免费的开发版有用量限制啊😭。</p>
+</li>
+</ul>
+<h3 id="2、代码高亮"><a href="#2、代码高亮" class="headerlink" title="2、代码高亮"></a>2、代码高亮</h3><p>在设置代码高亮的时候，照着官方教程走了一遍，发现显示不出来我引入的css样式，后来在<code>head</code>里发现这么一句话：</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>hl-default-theme<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://cdn.jsdelivr.net/npm/prismjs@1.21.0/themes/prism-okaidia.min.css<span class="token punctuation">"</span></span> <span class="token attr-name">media</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>none<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>我一看，好家伙，这是直接把我引入的样式文件禁用了啊。</p>
@@ -312,6 +346,16 @@
 
  
 
+ 
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?367331809a15dab371e0973bebdcf429';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
  
 
  
@@ -503,7 +547,7 @@
             (e = document.createElement("script")).src = '/js/MiniValine.min.js',
             document.body.appendChild(e);
             e.onload = () => {
-                var minivalineConfig = {"appId":"t8ltzv6dfc6LY2PyUHg63qji-gzGzoHsz","appKey":"kLUU303uYNpQC2FUrzrWiBAi","mode":"xCss","avatarD":"retro","math":true,"barrager":2,"enableFlag":true,"master":["85947f1b17a8c872e90bc01764a99268"],"tagMeta":["博主","小伙伴","访客"],"placeholder":"留个评论再走吧！","md":true,"region":true,"enableUA":true,"RecordIP":true,"pageSize":10};
+                var minivalineConfig = {"appId":"t8ltzv6dfc6LY2PyUHg63qji-gzGzoHsz","appKey":"kLUU303uYNpQC2FUrzrWiBAi","mode":"xCss","avatarD":"retro","math":true,"enableFlag":true,"master":["85947f1b17a8c872e90bc01764a99268"],"tagMeta":["博主","小伙伴","访客"],"placeholder":"留个评论再走吧！","md":true,"region":true,"enableUA":true,"enableQQ":true,"RecordIP":true,"pageSize":6};
                 minivalineConfig.el = '#minivaline_container';
                 for (var i in minivalineConfig) {
                     if (minivalineConfig[i] === null) delete minivalineConfig[i];
