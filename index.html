@@ -1,1840 +1,676 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="zh-CN">
-
-
-<head>
+    <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="yyzBlog">
-    <meta name="description" content="四方上下曰宇，古往今来曰宙">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
+
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    
+        <link rel="shortcut icon" href="/img/my-icon/favicon.ico">
+    
+    
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/my-icon/favicon-16x16.png">
+    
+    
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/my-icon/favicon-32x32.png">
+    
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    
 
 
-    <title>yyzBlog</title>
-    <link rel="icon" type="image/svg+xml" href="/gg-brands.svg">
+    <!-- meta -->
 
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
 
-    <script src="/libs/jquery/jquery.min.js"></script>
+<title>yyzBlog</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta name="description" content="四方上下曰宇，古往今来曰宙">
+<meta property="og:type" content="website">
+<meta property="og:title" content="yyzBlog">
+<meta property="og:url" content="http://yue7872.github.io/index.html">
+<meta property="og:site_name" content="yyzBlog">
+<meta property="og:description" content="四方上下曰宇，古往今来曰宙">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="blairyue">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+    
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
 
 <meta name="generator" content="Hexo 5.4.0"></head>
 
-
-
-
-<body>
-    <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/gg-brands.svg" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">yyzBlog</span>
-                </a>
-            </div>
-            
-
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
-        
-        <img src="/medias/gg-brands.svg" class="logo-img circle responsive-img">
-        
-        <div class="logo-name">yyzBlog</div>
-        <div class="logo-desc">
-            
-            四方上下曰宇，古往今来曰宙
-            
-        </div>
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">yyzBlog</span>
+        </a>
     </div>
-
-    
-
-    <ul class="menu-list mobile-menu-list">
+    <div class="header__right">
         
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">首页</a>
+                
+                    <a href="/tags/" class="navbar-menu button">标签</a>
+                
+                    <a href="/archives/" class="navbar-menu button">归档</a>
+                
+                    <a href="/contact/" class="navbar-menu button">contact</a>
+                
+                    <a href="/about/" class="navbar-menu button">about</a>
+                
+            </div>
         
         
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
-                <i class="fab fa-github-square fa-fw"></i>Fork Me
-            </a>
-        </li>
         
-    </ul>
-</div>
-
-
-        </div>
 
         
-            <style>
-    .nav-transparent .github-corner {
-        display: none !important;
-    }
-
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
-        }
-        20%,
-        60% {
-            transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-            transform: rotate(10deg);
-        }
-    }
-</style>
-
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
-   data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewBox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
-              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
-              fill="currentColor" class="octo-body"></path>
-    </svg>
-</a>
         
-    </nav>
 
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                
+                    <a href="/" class="dropdown-menu button">首页</a>
+                
+                    <a href="/tags/" class="dropdown-menu button">标签</a>
+                
+                    <a href="/archives/" class="dropdown-menu button">归档</a>
+                
+                    <a href="/contact/" class="dropdown-menu button">contact</a>
+                
+                    <a href="/about/" class="dropdown-menu button">about</a>
+                
+            </div>
+        
+    </div>
 </header>
 
-    
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
 
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color: rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-        <div id="prev-cover" class="left waves-effect carousel-control">
-            <i class="icon fa fa-angle-left"></i>
+    <div class="cover">
+        <div class="cover__logo">
+            
+                <img no-lazy alt="author Image" class="cover__avatar" src="/img/avatar.jpg">
+            
         </div>
-        <div id="next-cover" class="right waves-effect carousel-control">
-            <i class="icon fa fa-angle-right"></i>
-        </div>
-    
-
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                学就完事了
-                
+        
+        
+            <div class="cover__intro">
+                <p>四方上下曰宇，古往今来曰宙</p>
+ 
             </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "从来没有真正的绝境, 只有心灵的迷途",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
-
-
-
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
-
-                
-                    <a href="https://github.com/yue7872" class="waves-effect waves-light btn" target="_blank">
-                        <i class="fab fa-github-alt"></i>Github
-                    </a>
-                
-            </div>
-            <div class="cover-social-link">
-    <a href="https://github.com/yue7872" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:yyyzty@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2258462872" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2258462872" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-</div>
-        </div>
+        
     </div>
 
+            <main class="main">
     
-        
-
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('/medias/featureimages/0.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">React学习记录1：JSX与组件</div>
-                            <div class="description center-align">
-                                
-                                    Create React AppCreate React App，是一个用于学习React的舒适环境，也是用React创建一个新的单页应用的最佳方式。
-创建项目，在控制台中执行：
-npx create-react-app my-app
-cd
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2021/05/23/reactstudy1/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="post-list">
         
             
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('/medias/featureimages/21.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">React学习记录5：列表&amp;Key</div>
-                            <div class="description center-align">
-                                
-                                    列表&amp;Key1、渲染多个组件可以使用map()来遍历数组，将数组中的元素变为列表标签，然后赋值给listItems，再进行插入与渲染。
-const numbers = [1,2,3,4,5];
-const listItems = n
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2021/05/26/reactstudy5/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('/medias/featureimages/11.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">React学习记录8：类型检查</div>
-                            <div class="description center-align">
-                                
-                                    使用PropTypes进行类型检查注：自 React v15.5 起，React.PropTypes 已移入另一个包中。使用 prop-types 库代替。（需要多一步import）
-propTypes类似于TS的类型检查，React也内置
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2021/05/28/reactstudy8/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
+                <div class='post-entry content-card'>
+                    <div class="post-entry__header"></div>
+<div class="post-entry__content">
+    <h2 class="post-entry__title">
+        cards主题
+    </h2>
+    
+        <p>
+            Cards主题用了一段时间花里胡哨的    Matery    感觉看起来很乱，也不太适合一个干净整洁的博客，于是换了个主题，叫cards，这里是链接：
+        </p>
     
 </div>
-
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
-        }
-
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
-
-        let carouselIntervalId;
-        
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
-
-        function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
-
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
-        
-    });
-</script>
-
-
-
-<main class="content">
-
+<div class="post-entry__meta">
+    <a href="/archives/2021/06/" class="post-meta__date button">创建于 2021-06-22</a>
     
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;My Dream
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
-        </div>
-    </div>
+    <span class="separate-dot"></span><a href="/categories/hexo/" class="button">hexo</a>
+
+ 
 </div>
-
-                    
-
-                    
-
-                    
-
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-
-
-<div class="title"><i class="far fa-thumbs-up"></i>&nbsp;&nbsp;推荐文章</div>
-
-<div class="row">
-
-    
-    
-    <div class="col s12" >
-        
-            <div class="post-card" style="background-image: url('/medias/featureimages/4.jpg')">
-            
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                        
-                            <a href="/categories/DevOps/" class="category">DevOps</a>
-                        
-                    
+<div class="post-entry__tags"><a href="/tags/themes/" class="post-tags__link button"># themes</a></div> 
+<a href="/2021/06/22/cards-theme/" class="post-entry__link">cards主题</a>
                 </div>
-                <a href="/2021/05/25/devops/">
-                    <h3 class="post-title">什么是DevOps</h3>
-                </a>
-                <p class="post-description">瀑布式开发​        一个软件从零开始到最终交付，大致要经历：规划、编码、构建、测试、发布、部署和维护。最初程序简单的时候，程序员一人就能完成所有阶段的工作。而当软</p>
-                <a href="/2021/05/25/devops/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)" target="_blank">
-                    <i class="icon far fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12 m6" data-aos="zoom-in-up">
-        
-            <div class="post-card" style="background-image: url('/medias/featureimages/19.jpg')">
             
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                        
-                            <a href="/categories/markdown/" class="category">markdown</a>
-                        
-                    
-                </div>
-                <a href="/2021/05/24/typora/">
-                    <h3 class="post-title">typora：快捷键</h3>
-                </a>
-                <p class="post-description">一：菜单栏文件：alt+F
-编辑：alt+E
-段落：alt+P
-格式：alt+O
-视图：alt+V
-主题：alt+T
-帮助：alt+H
-二：</p>
-                <a href="/2021/05/24/typora/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)" target="_blank">
-                    <i class="icon far fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
+                <div class='post-entry content-card'>
+                    <div class="post-entry__header"></div>
+<div class="post-entry__content">
+    <h2 class="post-entry__title">
+        日常：每日记录
+    </h2>
     
+        这篇文章为加密内容, 请输入密码查看.
     
-    <div class="col s12 m6" data-aos="zoom-in-up">
-        
-            <div class="post-card" style="background-image: url('/medias/featureimages/18.jpg')">
-            
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                        
-                            <a href="/categories/webpack/" class="category">webpack</a>
-                        
-                    
-                </div>
-                <a href="/2021/05/28/webpack/">
-                    <h3 class="post-title">webpack学习：基础篇</h3>
-                </a>
-                <p class="post-description">1、webpack是什么webpack 是一个现代 JavaScript 应用程序的静态模块打包器，当 webpack 处理应用程序时，会递</p>
-                <a href="/2021/05/28/webpack/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #1AD6FD 0%, #1D62F0 100%)" target="_blank">
-                    <i class="icon far fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12" data-aos="zoom-in-up">
-        
-            <div class="post-card" style="background-image: url('/medias/featureimages/9.jpg')">
-            
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                        
-                            <a href="/categories/webpack/" class="category">webpack</a>
-                        
-                    
-                </div>
-                <a href="/2021/05/30/webpack3/">
-                    <h3 class="post-title">webpack学习：loader篇</h3>
-                </a>
-                <p class="post-description">webpack之Loader单开一篇记录一下loader！
-BabelBabel其实是一个编译JavaScript的平台，它可以编译代码帮你达到以下目的：
-
-让你能使用最</p>
-                <a href="/2021/05/30/webpack3/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FFCC00 0%, #FF9500 100%)" target="_blank">
-                    <i class="icon far fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12 m6" data-aos="zoom-in-up">
-        
-            <div class="post-card" style="background-image: url('/medias/featureimages/3.jpg')">
-            
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                        
-                            <a href="/categories/webpack/" class="category">webpack</a>
-                        
-                    
-                </div>
-                <a href="/2021/06/04/webpack4/">
-                    <h3 class="post-title">webpack学习：npm库</h3>
-                </a>
-                <p class="post-description">npm库之minimist1、process先来看一下node.js里的process模块：
-process存在于全局对象上，不需要使用re</p>
-                <a href="/2021/06/04/webpack4/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%)" target="_blank">
-                    <i class="icon far fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12 m6" data-aos="zoom-in-up">
-        
-            <div class="post-card" style="background-image: url('/medias/featureimages/8.jpg')">
-            
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                        
-                            <a href="/categories/webpack/" class="category">webpack</a>
-                        
-                    
-                </div>
-                <a href="/2021/06/21/webpack5/">
-                    <h3 class="post-title">webpack学习：生命周期</h3>
-                </a>
-                <p class="post-description">webpack的生命周期最近在做自定义插件的时候，接触到了hooks，在不同的生命周期执行钩子函数
-complier.hooks.&amp;lt;*</p>
-                <a href="/2021/06/21/webpack5/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #C644FC 0%, #5856D6 100%)" target="_blank">
-                    <i class="icon far fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12" data-aos="zoom-in-up">
-        
-            <div class="post-card" style="background-image: url('/medias/featureimages/2.jpg')">
-            
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                        
-                            <a href="/categories/webpack/" class="category">webpack</a>
-                        
-                    
-                </div>
-                <a href="/2021/06/04/webpackrecord/">
-                    <h3 class="post-title">webpack学习：问题记录</h3>
-                </a>
-                <p class="post-description">npm库之minimist1、process先来看一下node.js里的process模块：
-process存在于全局对象上，不需要使用require()加载即可使用，p</p>
-                <a href="/2021/06/04/webpackrecord/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #55EFCB 0%, #5BCAFF 100%)" target="_blank">
-                    <i class="icon far fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-
 </div>
-
-
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="post-entry__meta">
+    <a href="/archives/2021/06/" class="post-meta__date button">创建于 2021-06-22</a>
     
+    <span class="separate-dot"></span><a href="/categories/diary/" class="button">diary</a>
 
+ 
+</div>
+<div class="post-entry__tags"><a href="/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%8C%E8%83%A1%E8%A8%80%E4%B9%B1%E8%AF%AD/" class="post-tags__link button"># 日常记录，胡言乱语</a></div> 
+<a href="/2021/06/22/diary2/" class="post-entry__link">日常：每日记录</a>
+                </div>
+            
+                <div class='post-entry content-card'>
+                    <div class="post-entry__header"></div>
+<div class="post-entry__content">
+    <h2 class="post-entry__title">
+        webpack学习：生命周期
+    </h2>
     
+        <p>
+            webpack的生命周期最近在做自定义插件的时候，接触到了hooks，在不同的生命周期执行钩子函数
+complier.hooks.&lt;***&gt;.tap(&#39;myPlugin&#39;,()=&lt;&gt;&#123;&#125;;)
 
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/06/22/diary2/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="日常：每日记录">
-                            
-                            <span class="card-title">日常：每日记录</span>
-                        </div>
-                    </a>
+        </p>
+    
+</div>
+<div class="post-entry__meta">
+    <a href="/archives/2021/06/" class="post-meta__date button">创建于 2021-06-21</a>
+    
+    <span class="separate-dot"></span><a href="/categories/webpack/" class="button">webpack</a>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                这篇文章为加密内容, 请输入密码查看.
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-22
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/diary/" class="post-category">
-                                    diary
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%8C%E8%83%A1%E8%A8%80%E4%B9%B1%E8%AF%AD/">
-                            <span class="chip bg-color">日常记录，胡言乱语</span>
-                        </a>
-                        
-                    </div>
-                    
+ 
+</div>
+<div class="post-entry__tags"><a href="/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" class="post-tags__link button"># 生命周期</a><a href="/tags/webpack/" class="post-tags__link button"># webpack</a><a href="/tags/%E6%A8%A1%E5%9D%97/" class="post-tags__link button"># 模块</a><a href="/tags/%E6%89%93%E5%8C%85/" class="post-tags__link button"># 打包</a></div> 
+<a href="/2021/06/21/webpack5/" class="post-entry__link">webpack学习：生命周期</a>
                 </div>
-            </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/06/21/webpack5/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="webpack学习：生命周期">
-                            
-                            <span class="card-title">webpack学习：生命周期</span>
-                        </div>
-                    </a>
+                <div class='post-entry content-card'>
+                    <div class="post-entry__header"></div>
+<div class="post-entry__content">
+    <h2 class="post-entry__title">
+        日常：每日记录
+    </h2>
+    
+        这篇文章为加密内容, 请输入密码查看.
+    
+</div>
+<div class="post-entry__meta">
+    <a href="/archives/2021/06/" class="post-meta__date button">创建于 2021-06-09</a>
+    
+    <span class="separate-dot"></span><a href="/categories/diary/" class="button">diary</a>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                webpack的生命周期最近在做自定义插件的时候，接触到了hooks，在不同的生命周期执行钩子函数
-complier.hooks.&lt;***&gt;.tap(&#39;myPlugin&#39;,()=&lt;&gt;&#123;&#1
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-21
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/webpack/" class="post-category">
-                                    webpack
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/">
-                            <span class="chip bg-color">生命周期</span>
-                        </a>
-                        
-                        <a href="/tags/webpack/">
-                            <span class="chip bg-color">webpack</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%A8%A1%E5%9D%97/">
-                            <span class="chip bg-color">模块</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%89%93%E5%8C%85/">
-                            <span class="chip bg-color">打包</span>
-                        </a>
-                        
-                    </div>
-                    
+ 
+</div>
+<div class="post-entry__tags"><a href="/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%8C%E8%83%A1%E8%A8%80%E4%B9%B1%E8%AF%AD/" class="post-tags__link button"># 日常记录，胡言乱语</a></div> 
+<a href="/2021/06/09/diary1/" class="post-entry__link">日常：每日记录</a>
                 </div>
-            </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/06/09/diary1/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="日常：每日记录">
-                            
-                            <span class="card-title">日常：每日记录</span>
-                        </div>
-                    </a>
+                <div class='post-entry content-card'>
+                    <div class="post-entry__header"></div>
+<div class="post-entry__content">
+    <h2 class="post-entry__title">
+        webpack学习：npm库
+    </h2>
+    
+        <p>
+            npm库之minimist1、process先来看一下node.js里的process模块：
+proces...
+        </p>
+    
+</div>
+<div class="post-entry__meta">
+    <a href="/archives/2021/06/" class="post-meta__date button">创建于 2021-06-04</a>
+    
+    <span class="separate-dot"></span><a href="/categories/webpack/" class="button">webpack</a>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                这篇文章为加密内容, 请输入密码查看.
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-09
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/diary/" class="post-category">
-                                    diary
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%8C%E8%83%A1%E8%A8%80%E4%B9%B1%E8%AF%AD/">
-                            <span class="chip bg-color">日常记录，胡言乱语</span>
-                        </a>
-                        
-                    </div>
-                    
+ 
+</div>
+<div class="post-entry__tags"><a href="/tags/webpack/" class="post-tags__link button"># webpack</a><a href="/tags/%E6%A8%A1%E5%9D%97/" class="post-tags__link button"># 模块</a><a href="/tags/%E6%89%93%E5%8C%85/" class="post-tags__link button"># 打包</a><a href="/tags/npm/" class="post-tags__link button"># npm</a></div> 
+<a href="/2021/06/04/webpack4/" class="post-entry__link">webpack学习：npm库</a>
                 </div>
-            </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/06/04/webpack4/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="webpack学习：npm库">
-                            
-                            <span class="card-title">webpack学习：npm库</span>
-                        </div>
-                    </a>
+                <div class='post-entry content-card'>
+                    <div class="post-entry__header"></div>
+<div class="post-entry__content">
+    <h2 class="post-entry__title">
+        webpack学习：问题记录
+    </h2>
+    
+        <p>
+            npm库之minimist1、process先来看一下node.js里的process模块：
+proces...
+        </p>
+    
+</div>
+<div class="post-entry__meta">
+    <a href="/archives/2021/06/" class="post-meta__date button">创建于 2021-06-04</a>
+    
+    <span class="separate-dot"></span><a href="/categories/webpack/" class="button">webpack</a>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                npm库之minimist1、process先来看一下node.js里的process模块：
-process存在于全局对象上，不需要使用require()加载即可使用，process模块主要做两方面的事情：
-
-获取进程信息（资源使用、运行环
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-04
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/webpack/" class="post-category">
-                                    webpack
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/webpack/">
-                            <span class="chip bg-color">webpack</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%A8%A1%E5%9D%97/">
-                            <span class="chip bg-color">模块</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%89%93%E5%8C%85/">
-                            <span class="chip bg-color">打包</span>
-                        </a>
-                        
-                        <a href="/tags/npm/">
-                            <span class="chip bg-color">npm</span>
-                        </a>
-                        
-                    </div>
-                    
+ 
+</div>
+<div class="post-entry__tags"><a href="/tags/webpack/" class="post-tags__link button"># webpack</a><a href="/tags/%E6%A8%A1%E5%9D%97/" class="post-tags__link button"># 模块</a><a href="/tags/%E6%89%93%E5%8C%85/" class="post-tags__link button"># 打包</a><a href="/tags/%E8%AE%B0%E5%BD%95/" class="post-tags__link button"># 记录</a></div> 
+<a href="/2021/06/04/webpackrecord/" class="post-entry__link">webpack学习：问题记录</a>
                 </div>
-            </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/06/04/webpackrecord/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="webpack学习：问题记录">
-                            
-                            <span class="card-title">webpack学习：问题记录</span>
-                        </div>
-                    </a>
+                <div class='post-entry content-card'>
+                    <div class="post-entry__header"></div>
+<div class="post-entry__content">
+    <h2 class="post-entry__title">
+        webpack学习：loader篇
+    </h2>
+    
+        <p>
+            webpack之Loader单开一篇记录一下loader！
+BabelBabel其实是一个编译JavaScript的平台，它...
+        </p>
+    
+</div>
+<div class="post-entry__meta">
+    <a href="/archives/2021/05/" class="post-meta__date button">创建于 2021-05-30</a>
+    
+    <span class="separate-dot"></span><a href="/categories/webpack/" class="button">webpack</a>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                npm库之minimist1、process先来看一下node.js里的process模块：
-process存在于全局对象上，不需要使用require()加载即可使用，process模块主要做两方面的事情：
-
-获取进程信息（资源使用、运行环
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-06-04
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/webpack/" class="post-category">
-                                    webpack
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/webpack/">
-                            <span class="chip bg-color">webpack</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%A8%A1%E5%9D%97/">
-                            <span class="chip bg-color">模块</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%89%93%E5%8C%85/">
-                            <span class="chip bg-color">打包</span>
-                        </a>
-                        
-                        <a href="/tags/%E8%AE%B0%E5%BD%95/">
-                            <span class="chip bg-color">记录</span>
-                        </a>
-                        
-                    </div>
-                    
+ 
+</div>
+<div class="post-entry__tags"><a href="/tags/webpack/" class="post-tags__link button"># webpack</a><a href="/tags/%E6%A8%A1%E5%9D%97/" class="post-tags__link button"># 模块</a><a href="/tags/%E6%89%93%E5%8C%85/" class="post-tags__link button"># 打包</a><a href="/tags/Loaders/" class="post-tags__link button"># Loaders</a></div> 
+<a href="/2021/05/30/webpack3/" class="post-entry__link">webpack学习：loader篇</a>
                 </div>
-            </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/05/30/webpack3/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="webpack学习：loader篇">
-                            
-                            <span class="card-title">webpack学习：loader篇</span>
-                        </div>
-                    </a>
+                <div class='post-entry content-card'>
+                    <div class="post-entry__header"></div>
+<div class="post-entry__content">
+    <h2 class="post-entry__title">
+        webpack学习：报错篇
+    </h2>
+    
+        <p>
+            
+        </p>
+    
+</div>
+<div class="post-entry__meta">
+    <a href="/archives/2021/05/" class="post-meta__date button">创建于 2021-05-30</a>
+    
+    <span class="separate-dot"></span><a href="/categories/webpack/" class="button">webpack</a>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                webpack之Loader单开一篇记录一下loader！
-BabelBabel其实是一个编译JavaScript的平台，它可以编译代码帮你达到以下目的：
-
-让你能使用最新的JavaScript代码（ES6，ES7…），而不用管新标准是否被
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-30
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/webpack/" class="post-category">
-                                    webpack
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/webpack/">
-                            <span class="chip bg-color">webpack</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%A8%A1%E5%9D%97/">
-                            <span class="chip bg-color">模块</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%89%93%E5%8C%85/">
-                            <span class="chip bg-color">打包</span>
-                        </a>
-                        
-                        <a href="/tags/Loaders/">
-                            <span class="chip bg-color">Loaders</span>
-                        </a>
-                        
-                    </div>
-                    
+ 
+</div>
+<div class="post-entry__tags"><a href="/tags/webpack/" class="post-tags__link button"># webpack</a><a href="/tags/%E6%A8%A1%E5%9D%97/" class="post-tags__link button"># 模块</a><a href="/tags/%E6%89%93%E5%8C%85/" class="post-tags__link button"># 打包</a></div> 
+<a href="/2021/05/30/webpackproblems/" class="post-entry__link">webpack学习：报错篇</a>
                 </div>
-            </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/05/30/webpackproblems/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="webpack学习：报错篇">
-                            
-                            <span class="card-title">webpack学习：报错篇</span>
-                        </div>
-                    </a>
+                <div class='post-entry content-card'>
+                    <div class="post-entry__header"></div>
+<div class="post-entry__content">
+    <h2 class="post-entry__title">
+        webpack学习：功能篇
+    </h2>
+    
+        <p>
+            webpack的强大功能1、生成Source Maps（使...
+        </p>
+    
+</div>
+<div class="post-entry__meta">
+    <a href="/archives/2021/05/" class="post-meta__date button">创建于 2021-05-30</a>
+    
+    <span class="separate-dot"></span><a href="/categories/webpack/" class="button">webpack</a>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                webpack5 ： 启动 webpack-dev-server 报错 ： “Cannot find module ‘webpack-cli/bin/config-yargs”分析原因：webpack，webpack-cli 以及 webp
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-30
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/webpack/" class="post-category">
-                                    webpack
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/webpack/">
-                            <span class="chip bg-color">webpack</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%A8%A1%E5%9D%97/">
-                            <span class="chip bg-color">模块</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%89%93%E5%8C%85/">
-                            <span class="chip bg-color">打包</span>
-                        </a>
-                        
-                    </div>
-                    
+ 
+</div>
+<div class="post-entry__tags"><a href="/tags/webpack/" class="post-tags__link button"># webpack</a><a href="/tags/%E6%A8%A1%E5%9D%97/" class="post-tags__link button"># 模块</a><a href="/tags/%E6%89%93%E5%8C%85/" class="post-tags__link button"># 打包</a><a href="/tags/Loaders/" class="post-tags__link button"># Loaders</a></div> 
+<a href="/2021/05/30/webpack2/" class="post-entry__link">webpack学习：功能篇</a>
                 </div>
-            </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/05/30/webpack2/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="webpack学习：功能篇">
-                            
-                            <span class="card-title">webpack学习：功能篇</span>
-                        </div>
-                    </a>
+                <div class='post-entry content-card'>
+                    <div class="post-entry__header"></div>
+<div class="post-entry__content">
+    <h2 class="post-entry__title">
+        webpack学习：基础篇
+    </h2>
+    
+        <p>
+            1、webpack是什么webpack 是一个现代 JavaScript 应用程序的静态模块打包器，当 webpack 处理应用程序时，会递归构建一个依赖关系图，其中包含应用程序需要的每个模块，然后将这些模块打包成一个或...
+        </p>
+    
+</div>
+<div class="post-entry__meta">
+    <a href="/archives/2021/05/" class="post-meta__date button">创建于 2021-05-28</a>
+    
+    <span class="separate-dot"></span><a href="/categories/webpack/" class="button">webpack</a>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                webpack的强大功能1、生成Source Maps（使调试更容易）开发总是离不开调试，方便的调试能极大的提高开发效率，不过有时候通过打包后的文件，你是不容易找到出错了的地方，对应的你写的代码的位置的，Source Maps就是来帮我们解
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-30
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/webpack/" class="post-category">
-                                    webpack
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/webpack/">
-                            <span class="chip bg-color">webpack</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%A8%A1%E5%9D%97/">
-                            <span class="chip bg-color">模块</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%89%93%E5%8C%85/">
-                            <span class="chip bg-color">打包</span>
-                        </a>
-                        
-                        <a href="/tags/Loaders/">
-                            <span class="chip bg-color">Loaders</span>
-                        </a>
-                        
-                    </div>
-                    
+ 
+</div>
+<div class="post-entry__tags"><a href="/tags/webpack/" class="post-tags__link button"># webpack</a><a href="/tags/%E6%A8%A1%E5%9D%97/" class="post-tags__link button"># 模块</a><a href="/tags/%E6%89%93%E5%8C%85/" class="post-tags__link button"># 打包</a></div> 
+<a href="/2021/05/28/webpack/" class="post-entry__link">webpack学习：基础篇</a>
                 </div>
-            </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/05/28/webpack/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="webpack学习：基础篇">
-                            
-                            <span class="card-title">webpack学习：基础篇</span>
-                        </div>
-                    </a>
+                <div class='post-entry content-card'>
+                    <div class="post-entry__header"></div>
+<div class="post-entry__content">
+    <h2 class="post-entry__title">
+        React学习记录8：类型检查
+    </h2>
+    
+        <p>
+            使用PropTypes进行类型检查注：自 React v15.5 起，React.PropTypes 已移入另一个包中。使用 prop-types 库代替。（需要多...
+        </p>
+    
+</div>
+<div class="post-entry__meta">
+    <a href="/archives/2021/05/" class="post-meta__date button">创建于 2021-05-28</a>
+    
+    <span class="separate-dot"></span><a href="/categories/React-js/" class="button">React.js</a>
 
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                1、webpack是什么webpack 是一个现代 JavaScript 应用程序的静态模块打包器，当 webpack 处理应用程序时，会递归构建一个依赖关系图，其中包含应用程序需要的每个模块，然后将这些模块打包成一个或多个 bundle。
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-28
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/webpack/" class="post-category">
-                                    webpack
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/webpack/">
-                            <span class="chip bg-color">webpack</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%A8%A1%E5%9D%97/">
-                            <span class="chip bg-color">模块</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%89%93%E5%8C%85/">
-                            <span class="chip bg-color">打包</span>
-                        </a>
-                        
-                    </div>
-                    
+ 
+</div>
+<div class="post-entry__tags"><a href="/tags/js/" class="post-tags__link button"># js</a><a href="/tags/React/" class="post-tags__link button"># React</a><a href="/tags/%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5/" class="post-tags__link button"># 类型检查</a><a href="/tags/props/" class="post-tags__link button"># props</a></div> 
+<a href="/2021/05/28/reactstudy8/" class="post-entry__link">React学习记录8：类型检查</a>
                 </div>
-            </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/05/28/reactstudy8/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="React学习记录8：类型检查">
-                            
-                            <span class="card-title">React学习记录8：类型检查</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                使用PropTypes进行类型检查注：自 React v15.5 起，React.PropTypes 已移入另一个包中。使用 prop-types 库代替。（需要多一步import）
-propTypes类似于TS的类型检查，React也内置
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-28
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/React-js/" class="post-category">
-                                    React.js
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/js/">
-                            <span class="chip bg-color">js</span>
-                        </a>
-                        
-                        <a href="/tags/React/">
-                            <span class="chip bg-color">React</span>
-                        </a>
-                        
-                        <a href="/tags/%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5/">
-                            <span class="chip bg-color">类型检查</span>
-                        </a>
-                        
-                        <a href="/tags/props/">
-                            <span class="chip bg-color">props</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/05/28/reactstudy7/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="React学习记录7：React组件的组合用法">
-                            
-                            <span class="card-title">React学习记录7：React组件的组合用法</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                React组件的组合用法1、组件的嵌套
+                <div class='post-entry content-card'>
+                    <div class="post-entry__header"></div>
+<div class="post-entry__content">
+    <h2 class="post-entry__title">
+        React学习记录7：React组件的组合用法
+    </h2>
+    
+        <p>
+            React组件的组合用法1、组件的嵌套
 嵌套的情况下，子组件写在父组件的render函数中
-class Context extends React.Component &#123;
-  render()&#123;
-    return(
 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-28
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/React-js/" class="post-category">
-                                    React.js
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
+        </p>
+    
+</div>
+<div class="post-entry__meta">
+    <a href="/archives/2021/05/" class="post-meta__date button">创建于 2021-05-28</a>
+    
+    <span class="separate-dot"></span><a href="/categories/React-js/" class="button">React.js</a>
 
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/js/">
-                            <span class="chip bg-color">js</span>
-                        </a>
-                        
-                        <a href="/tags/React/">
-                            <span class="chip bg-color">React</span>
-                        </a>
-                        
-                        <a href="/tags/%E7%BB%84%E4%BB%B6/">
-                            <span class="chip bg-color">组件</span>
-                        </a>
-                        
-                        <a href="/tags/%E7%BB%84%E5%90%88/">
-                            <span class="chip bg-color">组合</span>
-                        </a>
-                        
-                    </div>
-                    
+ 
+</div>
+<div class="post-entry__tags"><a href="/tags/js/" class="post-tags__link button"># js</a><a href="/tags/React/" class="post-tags__link button"># React</a><a href="/tags/%E7%BB%84%E4%BB%B6/" class="post-tags__link button"># 组件</a><a href="/tags/%E7%BB%84%E5%90%88/" class="post-tags__link button"># 组合</a></div> 
+<a href="/2021/05/28/reactstudy7/" class="post-entry__link">React学习记录7：React组件的组合用法</a>
                 </div>
-            </div>
-              <!-- 隐藏某个文章 -->
             
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/05/26/reactstudy6/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="React学习记录6：如何用React构建应用程序">
-                            
-                            <span class="card-title">React学习记录6：如何用React构建应用程序</span>
+        
+    </div>
+    
+        <div class="nav">
+            <div class="nav__prev">
+                
+            </div>
+            <div class="nav__next">
+                
+                    <a href="/page/2/" class="nav__link">
+                        <div>
+                            <div class="nav__label">
+                                Next
+                            </div>
+                            <div class="nav__title">
+                                第 2 页
+                            </div>
+                        </div>
+                        <div>
+                            <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
                         </div>
                     </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                如何用React构建应用程序1、将UI拆解为组件
-拿到设计图，拆分组件。遵从单一职责原则，即一个组件理想情况下只处理一件事。
-
-拆分完组件后，对他们进行层级结构排列。即分为父组件、自组件等
-
-
-2、用 React 构建一个静态版本只使用pr
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-26
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/React-js/" class="post-category">
-                                    React.js
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/js/">
-                            <span class="chip bg-color">js</span>
-                        </a>
-                        
-                        <a href="/tags/React/">
-                            <span class="chip bg-color">React</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/">
-                            <span class="chip bg-color">应用程序</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%AE%9E%E4%BE%8B/">
-                            <span class="chip bg-color">实例</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
+                
             </div>
-              <!-- 隐藏某个文章 -->
-            
         </div>
-    </article>
+    
+
 
 </main>
 
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a class="left btn-floating btn-large disabled">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">1 / 3</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/2/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
-    </div>
-</div>
-
-
-
-
-    <footer class="page-footer bg-color">
+            <footer class="footer">
     
 
-    <div class="container row center-align"
-         style="margin-bottom: 15px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
+
+    
+    
+        <span id="leancloud_container_site_uv" hidden>
+            <span></span>
+            <span id="leancloud_value_site_uv"></span>
+            <span>Viewers</span>
             
-                <span id="year">2021</span>
+        </span>
+    
+    
+        <span id="leancloud_container_site_pv" hidden>
+            <span></span>
+            <span id="leancloud_value_site_pv"></span>
+            <span>Views</span>
             
-            <span id="year">2021</span>
-            <a href="/about" target="_blank">blairyue</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">19.5k</span>
-            
-            
-            
-                
-            
-            
-                <span id="busuanzi_container_site_pv">
-                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
-                    <span id="busuanzi_value_site_pv" class="white-color"></span>
-            </span>
-            
-            
-                <span id="busuanzi_container_site_uv">
-                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
-                    <span id="busuanzi_value_site_uv" class="white-color"></span>
-            </span>
-            
-            <br>
+        </span>
+    
 
-            <!-- 运行天数提醒. -->
-            
-                <span id="sitetime"> Loading ...</span>
-                <script>
-                    var calcSiteTime = function () {
-                        var seconds = 1000;
-                        var minutes = seconds * 60;
-                        var hours = minutes * 60;
-                        var days = hours * 24;
-                        var years = days * 365;
-                        var today = new Date();
-                        var startYear = "2021";
-                        var startMonth = "5";
-                        var startDate = "25";
-                        var startHour = "0";
-                        var startMinute = "0";
-                        var startSecond = "0";
-                        var todayYear = today.getFullYear();
-                        var todayMonth = today.getMonth() + 1;
-                        var todayDate = today.getDate();
-                        var todayHour = today.getHours();
-                        var todayMinute = today.getMinutes();
-                        var todaySecond = today.getSeconds();
-                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
-                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
-                        var diff = t2 - t1;
-                        var diffYears = Math.floor(diff / years);
-                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+     
+ 
 
-                        // 区分是否有年份.
-                        var language = 'zh-CN';
-                        if (startYear === String(todayYear)) {
-                            document.getElementById("year").innerHTML = todayYear;
-                            var daysTip = 'This site has been running for ' + diffDays + ' days';
-                            if (language === 'zh-CN') {
-                                daysTip = '本站已运行 ' + diffDays + ' 天';
-                            } else if (language === 'zh-HK') {
-                                daysTip = '本站已運行 ' + diffDays + ' 天';
-                            }
-                            document.getElementById("sitetime").innerHTML = daysTip;
-                        } else {
-                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
-                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
-                                + diffDays + ' days';
-                            if (language === 'zh-CN') {
-                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
-                            } else if (language === 'zh-HK') {
-                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
-                            }
-                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
-                        }
-                    }
-
-                    calcSiteTime();
-                </script>
-            
-            <br>
-            
-        </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/yue7872" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:yyyzty@163.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2258462872" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2258462872" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-</div>
-    </div>
+ 
+    
+        
+        <p class="footer-copyright">
+            Copyright © 2020&nbsp;-&nbsp;2021 <a href="/">yyzBlog</a>
+        </p>
+    
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
 </footer>
 
-<div class="progress-bar"></div>
-
-
-    <!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
         </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
+         
 
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
+ 
 
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+
+    
+    <script>
+        (function () {
+            function getRecord(Counter, target) {
+                return new Promise(function (resolve, reject) {
+                    Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
+                        .then(response => response.json())
+                        .then(({results}) => {
+                            if (results && results.length > 0) {
+                                var record = results[0];
+                                resolve(record);
+                            } else {
+                                Counter('post', '/classes/Counter', {
+                                        target, time: 0
+                                    })
+                                    .then(response => response.json())
+                                    .then(record => {
+                                        resolve(record);
+                                    }).catch(error => {
+                                        console.error('Failed to create', error);
+                                        reject(error);
+                                    });
                             }
-                            str += "</li>";
+                        }).catch(error => {
+                            console.error('LeanCloud Counter Error', error);
+                            reject(error);
+                        });
+                })
+            }
+        
+            function buildIncrement(objectId) {
+                return {
+                    "method": "PUT",
+                    "path": `/1.1/classes/Counter/${ objectId }`,
+                    "body": {
+                        "time": {
+                            '__op': 'Increment',
+                            'amount': 1
                         }
+                    }
+                }
+            }
+        
+            function increment(Counter, incrArr) {
+                return new Promise(function (resolve, reject) {
+                    Counter('post', '/batch', {
+                        "requests": incrArr
+                    }).then((res) => {
+                        resolve(res);
+                    }).catch(error => {
+                        console.error('Failed to save visitor count', error);
+                        reject(error);
                     });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
                 });
             }
-        });
-    };
+        
+            function validUV() {
+                var key = 'LeanCloud_UV_Flag';
+                var flag = localStorage.getItem(key);
+                if (flag) {
+                    if (new Date().getTime() - parseInt(flag) <= 86400000) {
+                        return false;
+                    }
+                }
+                localStorage.setItem(key, new Date().getTime().toString());
+                return true;
+            }
+        
+            function addCount(Counter) {
+                var enableIncr = 'leancloud' === 'leancloud';
+                var getterArr = [];
+                var incrArr = [];
+                var pvCtn = document.querySelector('#leancloud_container_site_pv');
+                if (pvCtn || enableIncr) {
+                    var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
+                        incrArr.push(buildIncrement(record.objectId))
+                        var ele = document.querySelector('#leancloud_value_site_pv');
+                        if (ele) {
+                            ele.innerText = record.time + 1;
+                            if (pvCtn) {
+                                pvCtn.style.display = 'inline';
+                            }
+                        }
+                    });
+                    getterArr.push(pvGetter);
+                }
+                var uvCtn = document.querySelector('#leancloud_container_site_uv');
+                if (uvCtn || enableIncr) {
+                    var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
+                        var vuv = validUV();
+                        vuv && incrArr.push(buildIncrement(record.objectId))
+                        var ele = document.querySelector('#leancloud_value_site_uv');
+                        if (ele) {
+                            ele.innerText = record.time + (vuv ? 1 : 0);
+                            if (uvCtn) {
+                                uvCtn.style.display = 'inline';
+                            }
+                        }
+                    });
+                    getterArr.push(uvGetter);
+                }
+                if ('false' === 'true') {
+                    var viewCtn = document.querySelector('#leancloud_container_page_pv');
+                    if (viewCtn || enableIncr) {
+                        var target = decodeURI('/index.html');
+                        var viewGetter = getRecord(Counter, target).then((record) => {
+                            incrArr.push(buildIncrement(record.objectId))
+                            if (viewCtn) {
+                                var ele = document.querySelector('#leancloud_value_page_pv');
+                                if (ele) {
+                                    ele.innerText = (record.time || 0) + 1;
+                                    viewCtn.style.display = 'inline';
+                                }
+                            }
+                        });
+                        getterArr.push(viewGetter);
+                    }
+                }
+                if (enableIncr) {
+                    Promise.all(getterArr).then(() => {
+                        incrArr.length > 0 && increment(Counter, incrArr);
+                    })
+                }
+            }
+        
+            var app_id = 't8ltzv6dfc6LY2PyUHg63qji-gzGzoHsz';
+            var app_key = 'kLUU303uYNpQC2FUrzrWiBAi';
+            var server_url = 'https://t8ltzv6d.lc-cn-n1-shared.com';
+        
+            function fetchData(api_server) {
+                var Counter = (method, url, data) => {
+                    return fetch(`${ api_server }/1.1${ url }`, {
+                        method,
+                        headers: {
+                                'X-LC-Id': app_id,
+                                'X-LC-Key': app_key,
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(data)
+                    });
+                };
+                addCount(Counter);
+            }
+            var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+            if (api_server) {
+                fetchData(api_server);
+            } else {
+                fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+                    .then(response => response.json())
+                    .then(({api_server}) => {
+                        fetchData('https://' + api_server);
+                    });
+            }
+        })();
+    </script>
 
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
-});
-</script>
+ 
 
-    <!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
+ 
+
+ 
+
+ 
+
+ 
 
 
-    <script src="/libs/materialize/materialize.min.js"></script>
-    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
-    <script src="/libs/aos/aos.js"></script>
-    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-    <script src="/js/matery.js"></script>
 
-    <!-- Baidu Analytics -->
 
-    <!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-
-    
-    
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-    
-
-    
-
-    
-
-    <!--腾讯兔小巢-->
-    
-    
-
-    
-    
-    <script type="text/javascript" size="190" alpha='0.6'
-        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
-    
-
-    
-
-    
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-    
-
-</body>
-
+    </body>
 </html>
