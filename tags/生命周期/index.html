@@ -1,439 +1,155 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
-    <meta charset="utf-8">
-
-    
-
-    <!-- 渲染优化 -->
-    <meta name="renderer" content="webkit">
-    <meta name="force-rendering" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="HandheldFriendly" content="True" >
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!--icon-->
-
-    
-        <link rel="shortcut icon" href="/img/my-icon/favicon.ico">
-    
-    
-        <link rel="icon" type="image/png" sizes="16x16" href="/img/my-icon/favicon-16x16.png">
-    
-    
-        <link rel="icon" type="image/png" sizes="32x32" href="/img/my-icon/favicon-32x32.png">
-    
-    
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    
-    
-
-
-    <!-- meta -->
-
-
-<title>标签：生命周期 | yyzBlog</title>
-
-
-
-
-
-    <!-- OpenGraph -->
- 
-    <meta name="description" content="四方上下曰宇，古往今来曰宙">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>标签: 生命周期 | yyzBlog</title><meta name="author" content="blairyue"><meta name="copyright" content="blairyue"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="四方上下曰宇，古往今来曰宙">
 <meta property="og:type" content="website">
 <meta property="og:title" content="yyzBlog">
 <meta property="og:url" content="http://yue7872.github.io/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/index.html">
 <meta property="og:site_name" content="yyzBlog">
 <meta property="og:description" content="四方上下曰宇，古往今来曰宙">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yue7872.github.io/img/avatar.jpg">
 <meta property="article:author" content="blairyue">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yue7872.github.io/img/avatar.jpg"><link rel="shortcut icon" href="/img/my-icon/favicon.ico"><link rel="canonical" href="http://yue7872.github.io/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu_site_verification" content="code-D160VxMs5A"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?367331809a15dab371e0973bebdcf429";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":100,"languages":{"author":"作者: blairyue","link":"链接: ","source":"来源: yyzBlog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '标签: 生命周期',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-06-23 23:29:51'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="/css/style/main.css">
- 
-
-    
-    
-    
-
-    
-
-     
-
-    <!-- custom head -->
-
-<meta name="generator" content="Hexo 5.4.0"></head>
-
-    <body>
-        <div id="app">
-            <header class="header">
-    <div class="header__left">
-        <a href="/" class="button">
-            <span class="logo__text">yyzBlog</span>
-        </a>
-    </div>
-    <div class="header__right">
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-            <div class="navbar__menus">
-                
-                    <a href="/" class="navbar-menu button">首页</a>
-                
-                    <a href="/tags/" class="navbar-menu button">标签</a>
-                
-                    <a href="/archives/" class="navbar-menu button">归档</a>
-                
-                    <a href="/contact/" class="navbar-menu button">contact</a>
-                
-                    <a href="/about/" class="navbar-menu button">about</a>
-                
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">34</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">49</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url('/img/homepage.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">yyzBlog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">生命周期</h1></div></header><main class="layout" id="content-inner"><div id="tag"><div class="article-sort-title">标签 - 生命周期</div><div class="article-sort"><div class="article-sort-item year">2021</div><div class="article-sort-item"><a class="article-sort-item-img" href="/2021/06/21/webpack5/" title="webpack学习：生命周期"><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" alt="webpack学习：生命周期" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2021-06-21T03:01:35.000Z" title="发表于 2021-06-21 11:01:35">2021-06-21</time></div><a class="article-sort-item-title" href="/2021/06/21/webpack5/" title="webpack学习：生命周期">webpack学习：生命周期</a></div></div><div class="article-sort-item"><a class="article-sort-item-img" href="/2021/05/24/reactstudy2/" title="React学习记录2：State&amp;生命周期"><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" alt="React学习记录2：State&amp;生命周期" onerror="this.onerror=null;this.src='/img/404.jpg'"></a><div class="article-sort-item-info"><div class="article-sort-item-time"><i class="far fa-calendar-alt"></i><time class="post-meta-date-created" datetime="2021-05-23T16:00:00.000Z" title="发表于 2021-05-24 00:00:00">2021-05-24</time></div><a class="article-sort-item-title" href="/2021/05/24/reactstudy2/" title="React学习记录2：State&amp;生命周期">React学习记录2：State&amp;生命周期</a></div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">blairyue</div><div class="author-info__description">四方上下曰宇，古往今来曰宙</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">34</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">49</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/yue7872" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:yyyzty@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/06/23/butterfly-theme/" title="butterfly主题"><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="butterfly主题"/></a><div class="content"><a class="title" href="/2021/06/23/butterfly-theme/" title="butterfly主题">butterfly主题</a><time datetime="2021-06-23T10:30:58.000Z" title="发表于 2021-06-23 18:30:58">2021-06-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/22/cards-theme/" title="cards主题"><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="cards主题"/></a><div class="content"><a class="title" href="/2021/06/22/cards-theme/" title="cards主题">cards主题</a><time datetime="2021-06-22T07:05:32.000Z" title="发表于 2021-06-22 15:05:32">2021-06-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/22/diary2/" title="日常：每日记录"><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日常：每日记录"/></a><div class="content"><a class="title" href="/2021/06/22/diary2/" title="日常：每日记录">日常：每日记录</a><time datetime="2021-06-21T23:47:15.000Z" title="发表于 2021-06-22 07:47:15">2021-06-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/21/webpack5/" title="webpack学习：生命周期"><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="webpack学习：生命周期"/></a><div class="content"><a class="title" href="/2021/06/21/webpack5/" title="webpack学习：生命周期">webpack学习：生命周期</a><time datetime="2021-06-21T03:01:35.000Z" title="发表于 2021-06-21 11:01:35">2021-06-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/09/diary1/" title="日常：每日记录"><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日常：每日记录"/></a><div class="content"><a class="title" href="/2021/06/09/diary1/" title="日常：每日记录">日常：每日记录</a><time datetime="2021-06-09T00:18:15.000Z" title="发表于 2021-06-09 08:18:15">2021-06-09</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
             </div>
-        
-        
-        
-
-        
-        
-
-        
-
-        
-            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
-            <div class="dropdown-menus" id="dropdown-menus">
-                
-                    <a href="/" class="dropdown-menu button">首页</a>
-                
-                    <a href="/tags/" class="dropdown-menu button">标签</a>
-                
-                    <a href="/archives/" class="dropdown-menu button">归档</a>
-                
-                    <a href="/contact/" class="dropdown-menu button">contact</a>
-                
-                    <a href="/about/" class="dropdown-menu button">about</a>
-                
-            </div>
-        
-    </div>
-</header>
-
-
-    <div class="cover">
-        <div class="cover__logo">
-            
-                <img no-lazy alt="author Image" class="cover__avatar" src="/img/avatar.jpg">
-            
-        </div>
-        
-        
-            <div class="cover__intro">
-                <p>四方上下曰宇，古往今来曰宙</p>
- 
-            </div>
-        
-    </div>
-
-            
-
-    
-        <main class="main">
-            
-    <div class="post-list">
-        
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        webpack学习：生命周期
-    </h2>
-    
-        <p>
-            webpack的生命周期最近在做自定义插件的时候，接触到了hooks，在不同的生命周期执行钩子函数
-complier.hooks.&lt;***&gt;.tap(&#39;myPlugin&#39;,()=&lt;&gt;&#123;&#125;;)
-
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2021/06/" class="post-meta__date button">创建于 2021-06-21</a>
-    
-    <span class="separate-dot"></span><a href="/categories/webpack/" class="button">webpack</a>
-
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" class="post-tags__link button"># 生命周期</a><a href="/tags/webpack/" class="post-tags__link button"># webpack</a><a href="/tags/%E6%A8%A1%E5%9D%97/" class="post-tags__link button"># 模块</a><a href="/tags/%E6%89%93%E5%8C%85/" class="post-tags__link button"># 打包</a></div> 
-<a href="/2021/06/21/webpack5/" class="post-entry__link">webpack学习：生命周期</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        React学习记录2：State&amp;生命周期
-    </h2>
-    
-        <p>
-            
-当 &lt;Clock /&gt; 被传给 ReactDOM.render()的时候，React 会调用 Clock 组件的构造函数。因为 Clock 需要显示当前的时间，所以它会用一个包含当前时间的对象来初始化 this.state。我们会在之后更新 state。
-之后 React 会调用组件的 render()...
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2021/05/" class="post-meta__date button">创建于 2021-05-24</a>
-    
-    <span class="separate-dot"></span><a href="/categories/React-js/" class="button">React.js</a>
-
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/js/" class="post-tags__link button"># js</a><a href="/tags/React/" class="post-tags__link button"># React</a><a href="/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" class="post-tags__link button"># 生命周期</a><a href="/tags/State/" class="post-tags__link button"># State</a></div> 
-<a href="/2021/05/24/reactstudy2/" class="post-entry__link">React学习记录2：State&amp;生命周期</a>
-                </div>
-            
-        
-    </div>
-    
-
-
-        </main>
-    
-
-
-            <footer class="footer">
-    
-
-
-    
-    
-        <span id="leancloud_container_site_uv" hidden>
-            <span></span>
-            <span id="leancloud_value_site_uv"></span>
-            <span>Viewers</span>
-            
-        </span>
-    
-    
-        <span id="leancloud_container_site_pv" hidden>
-            <span></span>
-            <span id="leancloud_value_site_pv"></span>
-            <span>Views</span>
-            
-        </span>
-    
-
-     
- 
-
- 
-    
-        
-        <p class="footer-copyright">
-            Copyright © 2020&nbsp;-&nbsp;2021 <a href="/">yyzBlog</a>
-        </p>
-    
-    
-    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
-</footer>
-
-        </div>
-         
-
- 
-
- 
-
- 
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement('script');
-            hm.src = 'https://hm.baidu.com/hm.js?367331809a15dab371e0973bebdcf429';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
- 
-
- 
-
- 
-
-
-
- 
-
-
-    
-    <script>
-        (function () {
-            function getRecord(Counter, target) {
-                return new Promise(function (resolve, reject) {
-                    Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
-                        .then(response => response.json())
-                        .then(({results}) => {
-                            if (results && results.length > 0) {
-                                var record = results[0];
-                                resolve(record);
-                            } else {
-                                Counter('post', '/classes/Counter', {
-                                        target, time: 0
-                                    })
-                                    .then(response => response.json())
-                                    .then(record => {
-                                        resolve(record);
-                                    }).catch(error => {
-                                        console.error('Failed to create', error);
-                                        reject(error);
-                                    });
-                            }
-                        }).catch(error => {
-                            console.error('LeanCloud Counter Error', error);
-                            reject(error);
-                        });
-                })
-            }
-        
-            function buildIncrement(objectId) {
-                return {
-                    "method": "PUT",
-                    "path": `/1.1/classes/Counter/${ objectId }`,
-                    "body": {
-                        "time": {
-                            '__op': 'Increment',
-                            'amount': 1
-                        }
-                    }
-                }
-            }
-        
-            function increment(Counter, incrArr) {
-                return new Promise(function (resolve, reject) {
-                    Counter('post', '/batch', {
-                        "requests": incrArr
-                    }).then((res) => {
-                        resolve(res);
-                    }).catch(error => {
-                        console.error('Failed to save visitor count', error);
-                        reject(error);
-                    });
-                });
-            }
-        
-            function validUV() {
-                var key = 'LeanCloud_UV_Flag';
-                var flag = localStorage.getItem(key);
-                if (flag) {
-                    if (new Date().getTime() - parseInt(flag) <= 86400000) {
-                        return false;
-                    }
-                }
-                localStorage.setItem(key, new Date().getTime().toString());
-                return true;
-            }
-        
-            function addCount(Counter) {
-                var enableIncr = 'leancloud' === 'leancloud';
-                var getterArr = [];
-                var incrArr = [];
-                var pvCtn = document.querySelector('#leancloud_container_site_pv');
-                if (pvCtn || enableIncr) {
-                    var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
-                        incrArr.push(buildIncrement(record.objectId))
-                        var ele = document.querySelector('#leancloud_value_site_pv');
-                        if (ele) {
-                            ele.innerText = record.time + 1;
-                            if (pvCtn) {
-                                pvCtn.style.display = 'inline';
-                            }
-                        }
-                    });
-                    getterArr.push(pvGetter);
-                }
-                var uvCtn = document.querySelector('#leancloud_container_site_uv');
-                if (uvCtn || enableIncr) {
-                    var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
-                        var vuv = validUV();
-                        vuv && incrArr.push(buildIncrement(record.objectId))
-                        var ele = document.querySelector('#leancloud_value_site_uv');
-                        if (ele) {
-                            ele.innerText = record.time + (vuv ? 1 : 0);
-                            if (uvCtn) {
-                                uvCtn.style.display = 'inline';
-                            }
-                        }
-                    });
-                    getterArr.push(uvGetter);
-                }
-                if ('false' === 'true') {
-                    var viewCtn = document.querySelector('#leancloud_container_page_pv');
-                    if (viewCtn || enableIncr) {
-                        var target = decodeURI('/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/index.html');
-                        var viewGetter = getRecord(Counter, target).then((record) => {
-                            incrArr.push(buildIncrement(record.objectId))
-                            if (viewCtn) {
-                                var ele = document.querySelector('#leancloud_value_page_pv');
-                                if (ele) {
-                                    ele.innerText = (record.time || 0) + 1;
-                                    viewCtn.style.display = 'inline';
-                                }
-                            }
-                        });
-                        getterArr.push(viewGetter);
-                    }
-                }
-                if (enableIncr) {
-                    Promise.all(getterArr).then(() => {
-                        incrArr.length > 0 && increment(Counter, incrArr);
-                    })
-                }
-            }
-        
-            var app_id = 't8ltzv6dfc6LY2PyUHg63qji-gzGzoHsz';
-            var app_key = 'kLUU303uYNpQC2FUrzrWiBAi';
-            var server_url = 'https://t8ltzv6d.lc-cn-n1-shared.com';
-        
-            function fetchData(api_server) {
-                var Counter = (method, url, data) => {
-                    return fetch(`${ api_server }/1.1${ url }`, {
-                        method,
-                        headers: {
-                                'X-LC-Id': app_id,
-                                'X-LC-Key': app_key,
-                                'Content-Type': 'application/json',
-                            },
-                            body: JSON.stringify(data)
-                    });
-                };
-                addCount(Counter);
-            }
-            var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
-            if (api_server) {
-                fetchData(api_server);
-            } else {
-                fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
-                    .then(response => response.json())
-                    .then(({api_server}) => {
-                        fetchData('https://' + api_server);
-                    });
-            }
-        })();
-    </script>
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
-
-
-    </body>
-</html>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/DevOps/"><span class="card-category-list-name">DevOps</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/React-js/"><span class="card-category-list-name">React.js</span><span class="card-category-list-count">8</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/css/"><span class="card-category-list-name">css</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/diary/"><span class="card-category-list-name">diary</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/hexo/"><span class="card-category-list-name">hexo</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/html/"><span class="card-category-list-name">html</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/js/"><span class="card-category-list-name">js</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/js%E5%9F%BA%E7%A1%80/"><span class="card-category-list-name">js基础</span><span class="card-category-list-count">8</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/DevOps/" style="font-size: 1.1em; color: #999">DevOps</a> <a href="/tags/Loaders/" style="font-size: 1.17em; color: #999c9f">Loaders</a> <a href="/tags/React/" style="font-size: 1.43em; color: #99a6b9">React</a> <a href="/tags/State/" style="font-size: 1.1em; color: #999">State</a> <a href="/tags/canvas/" style="font-size: 1.1em; color: #999">canvas</a> <a href="/tags/css/" style="font-size: 1.23em; color: #999ea6">css</a> <a href="/tags/html/" style="font-size: 1.1em; color: #999">html</a> <a href="/tags/html5/" style="font-size: 1.1em; color: #999">html5</a> <a href="/tags/js/" style="font-size: 1.5em; color: #99a9bf">js</a> <a href="/tags/jsx/" style="font-size: 1.1em; color: #999">jsx</a> <a href="/tags/js%E5%9F%BA%E7%A1%80/" style="font-size: 1.1em; color: #999">js基础</a> <a href="/tags/key/" style="font-size: 1.1em; color: #999">key</a> <a href="/tags/markdown/" style="font-size: 1.17em; color: #999c9f">markdown</a> <a href="/tags/npm/" style="font-size: 1.1em; color: #999">npm</a> <a href="/tags/props/" style="font-size: 1.1em; color: #999">props</a> <a href="/tags/themes/" style="font-size: 1.17em; color: #999c9f">themes</a> <a href="/tags/typora/" style="font-size: 1.1em; color: #999">typora</a> <a href="/tags/webpack/" style="font-size: 1.37em; color: #99a4b2">webpack</a> <a href="/tags/%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/" style="font-size: 1.1em; color: #999">事件处理</a> <a href="/tags/%E5%85%83%E7%B4%A0/" style="font-size: 1.1em; color: #999">元素</a> <a href="/tags/%E5%88%97%E8%A1%A8/" style="font-size: 1.1em; color: #999">列表</a> <a href="/tags/%E5%9F%BA%E7%A1%80/" style="font-size: 1.1em; color: #999">基础</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 1.1em; color: #999">字符串</a> <a href="/tags/%E5%AE%9E%E4%BE%8B/" style="font-size: 1.1em; color: #999">实例</a> <a href="/tags/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/" style="font-size: 1.1em; color: #999">应用程序</a> <a href="/tags/%E6%89%93%E5%8C%85/" style="font-size: 1.37em; color: #99a4b2">打包</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%AC%A6/" style="font-size: 1.1em; color: #999">操作符</a> <a href="/tags/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/" style="font-size: 1.1em; color: #999">敏捷开发</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" style="font-size: 1.23em; color: #999ea6">数据类型</a> <a href="/tags/%E6%95%B0%E7%BB%84/" style="font-size: 1.1em; color: #999">数组</a> <a href="/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%8C%E8%83%A1%E8%A8%80%E4%B9%B1%E8%AF%AD/" style="font-size: 1.17em; color: #999c9f">日常记录，胡言乱语</a> <a href="/tags/%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93/" style="font-size: 1.1em; color: #999">条件渲染</a> <a href="/tags/%E6%A8%A1%E5%9D%97/" style="font-size: 1.37em; color: #99a4b2">模块</a> <a href="/tags/%E6%B5%AE%E5%8A%A8/" style="font-size: 1.1em; color: #999">浮动</a> <a href="/tags/%E6%B8%B2%E6%9F%93/" style="font-size: 1.1em; color: #999">渲染</a> <a href="/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" style="font-size: 1.17em; color: #999c9f">生命周期</a> <a href="/tags/%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5/" style="font-size: 1.1em; color: #999">类型检查</a> <a href="/tags/%E7%BA%A2%E5%AE%9D%E4%B9%A6/" style="font-size: 1.3em; color: #99a1ac">红宝书</a> <a href="/tags/%E7%BB%84%E4%BB%B6/" style="font-size: 1.17em; color: #999c9f">组件</a> <a href="/tags/%E7%BB%84%E5%90%88/" style="font-size: 1.1em; color: #999">组合</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/06/"><span class="card-archive-list-date">六月 2021</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/05/"><span class="card-archive-list-date">五月 2021</span><span class="card-archive-list-count">14</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/04/"><span class="card-archive-list-date">四月 2021</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/03/"><span class="card-archive-list-date">三月 2021</span><span class="card-archive-list-count">9</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/03/"><span class="card-archive-list-date">三月 2020</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">34</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">20.6k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-06-23T15:29:51.454Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By blairyue</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

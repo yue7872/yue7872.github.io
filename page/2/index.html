@@ -1,723 +1,360 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
-    <meta charset="utf-8">
-
-    
-
-    <!-- 渲染优化 -->
-    <meta name="renderer" content="webkit">
-    <meta name="force-rendering" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="HandheldFriendly" content="True" >
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!--icon-->
-
-    
-        <link rel="shortcut icon" href="/img/my-icon/favicon.ico">
-    
-    
-        <link rel="icon" type="image/png" sizes="16x16" href="/img/my-icon/favicon-16x16.png">
-    
-    
-        <link rel="icon" type="image/png" sizes="32x32" href="/img/my-icon/favicon-32x32.png">
-    
-    
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    
-    
-
-
-    <!-- meta -->
-
-
-<title>yyzBlog</title>
-
-
-
-
-
-    <!-- OpenGraph -->
- 
-    <meta name="description" content="四方上下曰宇，古往今来曰宙">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>yyzBlog - 学就完事了</title><meta name="author" content="blairyue"><meta name="copyright" content="blairyue"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="四方上下曰宇，古往今来曰宙">
 <meta property="og:type" content="website">
 <meta property="og:title" content="yyzBlog">
 <meta property="og:url" content="http://yue7872.github.io/page/2/index.html">
 <meta property="og:site_name" content="yyzBlog">
 <meta property="og:description" content="四方上下曰宇，古往今来曰宙">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yue7872.github.io/img/avatar.jpg">
 <meta property="article:author" content="blairyue">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yue7872.github.io/img/avatar.jpg"><link rel="shortcut icon" href="/img/my-icon/favicon.ico"><link rel="canonical" href="http://yue7872.github.io/page/2/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu_site_verification" content="code-D160VxMs5A"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?367331809a15dab371e0973bebdcf429";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":100,"languages":{"author":"作者: blairyue","link":"链接: ","source":"来源: yyzBlog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'yyzBlog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2021-06-23 23:29:51'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="/css/style/main.css">
- 
-
-    
-    
-    
-
-    
-
-     
-
-    <!-- custom head -->
-
-<meta name="generator" content="Hexo 5.4.0"></head>
-
-    <body>
-        <div id="app">
-            <header class="header">
-    <div class="header__left">
-        <a href="/" class="button">
-            <span class="logo__text">yyzBlog</span>
-        </a>
-    </div>
-    <div class="header__right">
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-            <div class="navbar__menus">
-                
-                    <a href="/" class="navbar-menu button">首页</a>
-                
-                    <a href="/tags/" class="navbar-menu button">标签</a>
-                
-                    <a href="/archives/" class="navbar-menu button">归档</a>
-                
-                    <a href="/contact/" class="navbar-menu button">contact</a>
-                
-                    <a href="/about/" class="navbar-menu button">about</a>
-                
-            </div>
-        
-        
-        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">34</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">49</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/homepage.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">yyzBlog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">yyzBlog</h1><div id="site_social_icons"><a class="social-icon" href="https://github.com/yue7872" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:yyyzty@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/05/28/reactstudy7/" title="React学习记录7：React组件的组合用法">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="React学习记录7：React组件的组合用法"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/28/reactstudy7/" title="React学习记录7：React组件的组合用法">React学习记录7：React组件的组合用法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-05-28T03:00:00.000Z" title="发表于 2021-05-28 11:00:00">2021-05-28</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-06-04T09:30:48.627Z" title="更新于 2021-06-04 17:30:48">2021-06-04</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/React-js/">React.js</a></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-comments"></i><a href="/2021/05/28/reactstudy7/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2021/05/28/reactstudy7/" itemprop="commentCount"></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">React组件的组合用法1、组件的嵌套
+嵌套的情况下，子组件写在父组件的render函数中
+class Context extends React.Component &#123;
+  render()&#123;
+    return(
+      &lt;span>this is context&lt;/span>
+    )
+  &#125;
+&#125;
 
-        
-        
+class Home extends React.Component &#123;
+  render()&#123;
+    return(
+    &lt;div>      
+      &#123;/* 将子组件直接写进父组件的render函数中 */&#125;
+      &lt;h3> this is home &lt;/h3>
+      &lt;Context />
+    &lt;/div>
+    )
+  &#125;
+&#125;
 
-        
+2、this.props.childrenthis.props.children是用来组合组件的，效果类似于vue的插槽。
+class Title extends Reac ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/05/26/reactstudy6/" title="React学习记录6：如何用React构建应用程序">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="React学习记录6：如何用React构建应用程序"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/26/reactstudy6/" title="React学习记录6：如何用React构建应用程序">React学习记录6：如何用React构建应用程序</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-05-26T04:00:00.000Z" title="发表于 2021-05-26 12:00:00">2021-05-26</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-05-28T02:41:21.776Z" title="更新于 2021-05-28 10:41:21">2021-05-28</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/React-js/">React.js</a></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-comments"></i><a href="/2021/05/26/reactstudy6/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2021/05/26/reactstudy6/" itemprop="commentCount"></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">如何用React构建应用程序1、将UI拆解为组件
+拿到设计图，拆分组件。遵从单一职责原则，即一个组件理想情况下只处理一件事。
 
-        
-            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
-            <div class="dropdown-menus" id="dropdown-menus">
-                
-                    <a href="/" class="dropdown-menu button">首页</a>
-                
-                    <a href="/tags/" class="dropdown-menu button">标签</a>
-                
-                    <a href="/archives/" class="dropdown-menu button">归档</a>
-                
-                    <a href="/contact/" class="dropdown-menu button">contact</a>
-                
-                    <a href="/about/" class="dropdown-menu button">about</a>
-                
-            </div>
-        
-    </div>
-</header>
+拆分完组件后，对他们进行层级结构排列。即分为父组件、自组件等
 
 
-    <div class="cover">
-        <div class="cover__logo">
-            
-                <img no-lazy alt="author Image" class="cover__avatar" src="/img/avatar.jpg">
-            
-        </div>
-        
-        
-            <div class="cover__intro">
-                <p>四方上下曰宇，古往今来曰宙</p>
- 
-            </div>
-        
-    </div>
+2、用 React 构建一个静态版本只使用props在父子组件间进行传值，没有交互，不要使用state。
+3、确定 UI state(状态) 的最小（但完整）表示要正确的构建应用程序，你首先需要考虑你的应用程序需要的可变 state(状态) 的最小集合。这里的关键是：DRY: 不要重复你自己。找出你的应用程序所需 state(状态) 的绝对最小表示，并且可以以此计算出你所需的所有其他数据内容。例如，如果你正在构建一个 TODO 列表，只保留一个 TODO 元素数组即可;不需要为元素数量保留一个单独的 state(状态) 变量。相反，当你要渲染 TODO 计数时，只需要获取 TODO 数组的长度即可。
+如何判断哪些数据是state：
 
-            <main class="main">
-    
-    <div class="post-list">
-        
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        React学习记录6：如何用React构建应用程序
-    </h2>
-    
-        <p>
-            如何用React构建应用程序1、将UI拆解为组件
-拿到设计图，拆分组件。遵从单一职责原则，即...
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2021/05/" class="post-meta__date button">创建于 2021-05-26</a>
-    
-    <span class="separate-dot"></span><a href="/categories/React-js/" class="button">React.js</a>
+是否通过 props(属性) 从父级传入？ 如果是这样，它可能不是 state(状态) 。
 
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/js/" class="post-tags__link button"># js</a><a href="/tags/React/" class="post-tags__link button"># React</a><a href="/tags/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/" class="post-tags__link button"># 应用程序</a><a href="/tags/%E5%AE%9E%E4%BE%8B/" class="post-tags__link button"># 实例</a></div> 
-<a href="/2021/05/26/reactstudy6/" class="post-entry__link">React学习记录6：如何用React构建应用程序</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        React学习记录5：列表&amp;Key
-    </h2>
-    
-        <p>
-            列表&amp;Key1、渲染多个组件可以使用map()来遍历数组，将数组中的元素变为列表标签，然后赋值给listItems，再进行插入与渲染。
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2021/05/" class="post-meta__date button">创建于 2021-05-26</a>
-    
-    <span class="separate-dot"></span><a href="/categories/React-js/" class="button">React.js</a>
+是否永远不会发生变化？ 如果是这样，它可能不是 state(状态)。
+ ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/05/26/reactstudy5/" title="React学习记录5：列表&amp;Key">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="React学习记录5：列表&amp;Key"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/26/reactstudy5/" title="React学习记录5：列表&amp;Key">React学习记录5：列表&amp;Key</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-05-26T03:00:00.000Z" title="发表于 2021-05-26 11:00:00">2021-05-26</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-06-23T13:25:16.497Z" title="更新于 2021-06-23 21:25:16">2021-06-23</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/React-js/">React.js</a></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-comments"></i><a href="/2021/05/26/reactstudy5/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2021/05/26/reactstudy5/" itemprop="commentCount"></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">列表&amp;Key1、渲染多个组件可以使用map()来遍历数组，将数组中的元素变为列表标签，然后赋值给listItems，再进行插入与渲染。
+const numbers = [1,2,3,4,5];
+const listItems = numbers.map((number) =>
+	&lt;li>&#123;number&#125;&lt;/li>
+);
+  
+ReactDOM.render(
+  &lt;ul>&#123;listItems&#125;&lt;/ul>,
+  document.getElementById('root')
+);                                                        
 
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/js/" class="post-tags__link button"># js</a><a href="/tags/React/" class="post-tags__link button"># React</a><a href="/tags/%E5%88%97%E8%A1%A8/" class="post-tags__link button"># 列表</a><a href="/tags/key/" class="post-tags__link button"># key</a><a href="/tags/%E6%B8%B2%E6%9F%93/" class="post-tags__link button"># 渲染</a></div> 
-<a href="/2021/05/26/reactstudy5/" class="post-entry__link">React学习记录5：列表&amp;Key</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        React学习记录4：条件渲染
-    </h2>
-    
-        <p>
-            条件渲染在 React 中，你可以创建不同的组件来封装各种你需要的行为。然后，依据应用的不同状态，你可以只渲染对应状态下的部分内容。
-1、if或条件运算...
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2021/05/" class="post-meta__date button">创建于 2021-05-26</a>
-    
-    <span class="separate-dot"></span><a href="/categories/React-js/" class="button">React.js</a>
+2、基础列表组件我们通常在组件内渲染列表，可以把上述例子重构，使之成为一个组件。这个组件接收numbers数组作为参数，并输出一个元素列表。
+function NumberList(props) &#123;
+  const numbers = props.numbers;
+  const listItems = numbers ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/05/26/reactstudy4/" title="React学习记录4：条件渲染">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="React学习记录4：条件渲染"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/26/reactstudy4/" title="React学习记录4：条件渲染">React学习记录4：条件渲染</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-05-26T02:00:00.000Z" title="发表于 2021-05-26 10:00:00">2021-05-26</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-05-27T12:52:20.689Z" title="更新于 2021-05-27 20:52:20">2021-05-27</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/React-js/">React.js</a></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-comments"></i><a href="/2021/05/26/reactstudy4/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2021/05/26/reactstudy4/" itemprop="commentCount"></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">条件渲染在 React 中，你可以创建不同的组件来封装各种你需要的行为。然后，依据应用的不同状态，你可以只渲染对应状态下的部分内容。
+1、if或条件运算符自定义一个Greeting组件，根据用户是否登陆来决定显示哪个组件。
+function UserGreeting(props)&#123;
+  return &lt;h1>Welcome back!&lt;/h1>;
+&#125;
 
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/js/" class="post-tags__link button"># js</a><a href="/tags/React/" class="post-tags__link button"># React</a><a href="/tags/%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93/" class="post-tags__link button"># 条件渲染</a><a href="/tags/%E8%BF%90%E7%AE%97%E7%AC%A6/" class="post-tags__link button"># 运算符</a></div> 
-<a href="/2021/05/26/reactstudy4/" class="post-entry__link">React学习记录4：条件渲染</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        React学习记录3：事件处理
-    </h2>
-    
-        <p>
-            事件处理React元素的事件处理类似于DOM元素，只是一些语法不同。
+function GuestGreeting(props)&#123;
+  return &lt;h1>Please sign up.&lt;/h1>;
+&#125;
+
+function Greeting(props) &#123;
+	const isLoggedIn = props.isLoggedIn;
+  if(isLoggedIn) &#123;
+    return &lt;UserGreeting />;
+  &#125;
+  return &lt;GuestGreeting />;
+&#125;
+
+ReactDOM.render(
+  // Try changing to isLoggedI ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/05/26/reactstudy3/" title="React学习记录3：事件处理">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="React学习记录3：事件处理"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/26/reactstudy3/" title="React学习记录3：事件处理">React学习记录3：事件处理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-05-25T16:00:00.000Z" title="发表于 2021-05-26 00:00:00">2021-05-26</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-05-27T12:39:11.489Z" title="更新于 2021-05-27 20:39:11">2021-05-27</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/React-js/">React.js</a></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-comments"></i><a href="/2021/05/26/reactstudy3/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2021/05/26/reactstudy3/" itemprop="commentCount"></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">事件处理React元素的事件处理类似于DOM元素，只是一些语法不同。
 1、命名
 React事件命名采用小驼峰式（camelCase），而不是纯小写。
 
+使用JSX语法时你需要传入一个函数作为事件处理函数，而不是一个字符串。
+例如，HTML：
+&lt;button onclick="changeState()">
+  改变
+&lt;/button>
 
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2021/05/" class="post-meta__date button">创建于 2021-05-26</a>
-    
-    <span class="separate-dot"></span><a href="/categories/React-js/" class="button">React.js</a>
+而在React中：
+&lt;button onClick=&#123;changeState&#125;>
+	改变
+&lt;/button>
 
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/js/" class="post-tags__link button"># js</a><a href="/tags/%E8%A7%84%E8%8C%83/" class="post-tags__link button"># 规范</a><a href="/tags/%E8%AF%AD%E6%B3%95/" class="post-tags__link button"># 语法</a><a href="/tags/React/" class="post-tags__link button"># React</a><a href="/tags/%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/" class="post-tags__link button"># 事件处理</a></div> 
-<a href="/2021/05/26/reactstudy3/" class="post-entry__link">React学习记录3：事件处理</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        什么是DevOps
-    </h2>
-    
-        <p>
-            瀑布式开发​        一个软件从零开始到最终交付，大致要经历：规划、编码、构建、测试、发布、部署和维护。最初程序简单的时候，程序员一人就能完成所有阶段的工作。而当软件产业不断发展，出现精细化分工，如开发、测试、运维等。于是由原先的程序员一人完成工作，转变成了传统的软件开发流程：
-​        开发花费大量时间编写代...
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2021/05/" class="post-meta__date button">创建于 2021-05-25</a>
-    
-    <span class="separate-dot"></span><a href="/categories/DevOps/" class="button">DevOps</a>
+2、默认行为阻止类似于a标签的默认跳转事件（return false），在react中：
+handleClick(e) &#123;
+    e.preventDefault();  //这里阻止跳转
+    console.log('The link was clicked.');
+&#125;
+return (
+    &lt;a href="#" onClick=&#123;handleClick&#125;>
+      Click me
+    &lt;/a>
+);
 
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/DevOps/" class="post-tags__link button"># DevOps</a><a href="/tags/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/" class="post-tags__link button"># 敏捷开发</a><a href="/tags/%E8%BF%90%E7%BB%B4/" class="post-tags__link button"># 运维</a><a href="/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F/" class="post-tags__link button"># 软件开发模式</a></div> 
-<a href="/2021/05/25/devops/" class="post-entry__link">什么是DevOps</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        typora：快捷键
-    </h2>
-    
-        <p>
-            一：菜单栏文件：alt+F
+3、绑定事件func ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/05/25/devops/" title="什么是DevOps">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="什么是DevOps"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/25/devops/" title="什么是DevOps">什么是DevOps</a><div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i><span class="sticky">置顶</span><span class="article-meta__separator">|</span></span><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-05-24T16:00:00.000Z" title="发表于 2021-05-25 00:00:00">2021-05-25</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-05-31T05:17:26.240Z" title="更新于 2021-05-31 13:17:26">2021-05-31</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/DevOps/">DevOps</a></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-comments"></i><a href="/2021/05/25/devops/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2021/05/25/devops/" itemprop="commentCount"></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">瀑布式开发​        一个软件从零开始到最终交付，大致要经历：规划、编码、构建、测试、发布、部署和维护。最初程序简单的时候，程序员一人就能完成所有阶段的工作。而当软件产业不断发展，出现精细化分工，如开发、测试、运维等。于是由原先的程序员一人完成工作，转变成了传统的软件开发流程：
+​        开发花费大量时间编写代码，然后把代码交给QA进行测试，再将最终的发布版本交给运维团队去部署。即开发 =&gt;测试=&gt;部署。这种早期采用的软件交付模型，被称为瀑布模型。简而言之，就是等一个阶段所有工作完成之后才进入下一个阶段，而当用户对系统的需求不断增加，给的时间周期越来越短的时候，瀑布式开发就显得笨重而又迟缓。
+敏捷开发​        敏捷开发是一种能应对快速变化需求的软件开发能力。简单来说，就是把大项目变成小项目，把大时间点变成小时间点。就像这样：
+
+
+​        比较流行的案例是scrum、XP极限编程。在新迭代（一般2-6周）开始前，产品经理将需求拆分成具体的开发任务，研发人员进行任务认领，每日会进行任务的review，直至开发完成，发布新的可用版本。
+​      ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/05/24/typora/" title="typora：快捷键">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="typora：快捷键"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/24/typora/" title="typora：快捷键">typora：快捷键</a><div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i><span class="sticky">置顶</span><span class="article-meta__separator">|</span></span><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-05-24T11:55:04.766Z" title="发表于 2021-05-24 19:55:04">2021-05-24</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-06-09T01:11:35.376Z" title="更新于 2021-06-09 09:11:35">2021-06-09</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/markdown/">markdown</a></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-comments"></i><a href="/2021/05/24/typora/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2021/05/24/typora/" itemprop="commentCount"></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">一：菜单栏文件：alt+F
 编辑：alt+E
 段落：alt+P
 格式：alt+O
 视图：alt+V
 主题：alt+T
 帮助：alt+H
-
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2021/05/" class="post-meta__date button">创建于 2021-05-24</a>
-    
-    <span class="separate-dot"></span><a href="/categories/markdown/" class="button">markdown</a>
-
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/markdown/" class="post-tags__link button"># markdown</a><a href="/tags/typora/" class="post-tags__link button"># typora</a></div> 
-<a href="/2021/05/24/typora/" class="post-entry__link">typora：快捷键</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        React学习记录2：State&amp;生命周期
-    </h2>
-    
-        <p>
-            
+二：文件新建：Ctrl+N
+新建窗口：Ctrl+Shift+N
+打开：Ctrl+O
+快速打开：Ctrl+P
+保存：Ctrl+S
+另存为：Ctrl+Shift+S
+偏好：Ctrl+,
+关闭：Ctrl+W
+三：编辑撤销：Ctrl+Z
+重做：Ctrl+Y
+剪切：Ctrl+X
+复制：Ctrl+C
+粘贴：Ctrl+V
+复制为MarkDown：Ctrl+Shift+C
+粘贴为纯文本：Ctrl+Shift+V
+全选：Ctrl+A
+选中当前行/句：Ctrl+L
+选中当前格式文本：Ctrl+E
+选中当前词：Ctrl+D
+跳转到文首：Ctrl+Home
+跳转到所选内容：Ctrl+J
+跳转到文末：Ctrl+End
+查找：Ctrl+F
+查找下一个：F3
+查找上一个：Shift+F3
+替换：Ctrl+H
+四：段落标题：Ctrl+1/2/3/4/5
+段落：Ctrl+0
+增大标题级别：Ctrl+=
+减少标题级别：Ctrl+-
+表格：Ctrl+T
+代码块：Ctrl+Shift+K
+公 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/05/24/reactstudy2/" title="React学习记录2：State&amp;生命周期">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="React学习记录2：State&amp;生命周期"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/24/reactstudy2/" title="React学习记录2：State&amp;生命周期">React学习记录2：State&amp;生命周期</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-05-23T16:00:00.000Z" title="发表于 2021-05-24 00:00:00">2021-05-24</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-05-26T07:20:13.762Z" title="更新于 2021-05-26 15:20:13">2021-05-26</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/React-js/">React.js</a></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-comments"></i><a href="/2021/05/24/reactstudy2/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2021/05/24/reactstudy2/" itemprop="commentCount"></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">
 当 &lt;Clock /&gt; 被传给 ReactDOM.render()的时候，React 会调用 Clock 组件的构造函数。因为 Clock 需要显示当前的时间，所以它会用一个包含当前时间的对象来初始化 this.state。我们会在之后更新 state。
-之后 React 会调用组件的 render()...
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2021/05/" class="post-meta__date button">创建于 2021-05-24</a>
-    
-    <span class="separate-dot"></span><a href="/categories/React-js/" class="button">React.js</a>
-
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/js/" class="post-tags__link button"># js</a><a href="/tags/React/" class="post-tags__link button"># React</a><a href="/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" class="post-tags__link button"># 生命周期</a><a href="/tags/State/" class="post-tags__link button"># State</a></div> 
-<a href="/2021/05/24/reactstudy2/" class="post-entry__link">React学习记录2：State&amp;生命周期</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        React学习记录1：JSX与组件
-    </h2>
-    
-        <p>
-            Create React AppCreate React App，是一个用于学习React的舒适环境，也是用React创建一个新的单页应用的最佳方式。
+之后 React 会调用组件的 render() 方法。这就是 React 确定该在页面上展示什么的方式。然后 React 更新 DOM 来匹配 Clock 渲染的输出。
+当 Clock 的输出被插入到 DOM 中后，React 就会调用 ComponentDidMount() 生命周期方法。在这个方法中，Clock 组件向浏览器请求设置一个计时器来每秒调用一次组件的 tick() 方法。
+浏览器每秒都会调用一次 tick() 方法。 在这方法之中，Clock 组件会通过调用 setState() 来计划进行一次 UI 更新。得益于 setState() 的调用，React 能够知道 state 已经改变了，然后会重新调用 render() 方法来确定页面上该显示什么。这一次，render() 方法中的 this.sta ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/05/23/reactstudy1/" title="React学习记录1：JSX与组件">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="React学习记录1：JSX与组件"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/05/23/reactstudy1/" title="React学习记录1：JSX与组件">React学习记录1：JSX与组件</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-05-22T16:00:00.000Z" title="发表于 2021-05-23 00:00:00">2021-05-23</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-06-23T13:25:22.548Z" title="更新于 2021-06-23 21:25:22">2021-06-23</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/React-js/">React.js</a></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-comments"></i><a href="/2021/05/23/reactstudy1/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2021/05/23/reactstudy1/" itemprop="commentCount"></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">Create React AppCreate React App，是一个用于学习React的舒适环境，也是用React创建一个新的单页应用的最佳方式。
 创建项目，在控制台中执行：
+npx create-react-app my-app
+cd my-app
+npm start
 
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2021/05/" class="post-meta__date button">创建于 2021-05-23</a>
-    
-    <span class="separate-dot"></span><a href="/categories/React-js/" class="button">React.js</a>
+这样就新建好一个新的单页应用，可以开始写代码了！
+JSX简介JSX是一种JavaScript的语法扩展，用于React架构中，它具有JavaScript的全部功能。可以生成React元素。
+1、大括号JSX语法中，可以在大括号内放置任何有效的JavaScript表达式，包括函数等。
+const name = 'yyz';
+const element = &lt;h1>Hello,&#123;name&#125;&lt;/h1>;
 
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/js/" class="post-tags__link button"># js</a><a href="/tags/jsx/" class="post-tags__link button"># jsx</a><a href="/tags/React/" class="post-tags__link button"># React</a><a href="/tags/%E7%BB%84%E4%BB%B6/" class="post-tags__link button"># 组件</a><a href="/tags/%E5%85%83%E7%B4%A0/" class="post-tags__link button"># 元素</a></div> 
-<a href="/2021/05/23/reactstudy1/" class="post-entry__link">React学习记录1：JSX与组件</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        canvas相关
-    </h2>
-    
-        <p>
-            canvas相关觉得自己实在太垃圾了，就来整理一下，做人还是要 多总结。
+ReactDOM.render(
+	element,
+	document.getElementBuId('root')
+);
 
-canva...
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2021/04/" class="post-meta__date button">创建于 2021-04-06</a>
-    
-    <span class="separate-dot"></span><a href="/categories/html/" class="button">html</a>
+2、表达式编译之后，JSX表达式会被转为普通js函数调用。即可以把JSX赋值给变量，把JSX当参数传入，以及从函数中返回JSX：
+function getHe ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/04/06/canvas/" title="canvas相关">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="canvas相关"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/06/canvas/" title="canvas相关">canvas相关</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-04-06T10:22:51.000Z" title="发表于 2021-04-06 18:22:51">2021-04-06</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-05-31T05:25:31.084Z" title="更新于 2021-05-31 13:25:31">2021-05-31</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/html/">html</a></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-comments"></i><a href="/2021/04/06/canvas/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2021/04/06/canvas/" itemprop="commentCount"></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">canvas相关觉得自己实在太垃圾了，就来整理一下，做人还是要 多总结。
 
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/canvas/" class="post-tags__link button"># canvas</a><a href="/tags/html5/" class="post-tags__link button"># html5</a><a href="/tags/%E7%BB%98%E5%9B%BE/" class="post-tags__link button"># 绘图</a></div> 
-<a href="/2021/04/06/canvas/" class="post-entry__link">canvas相关</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        数组操作
-    </h2>
-    
-        <p>
-            数组操作面试觉得自己实在太垃圾了，就来整理一下常问问题，做人还是要 多总结。
+canvas设置宽高1.canvas大小默认为300X150；2.错误的设置宽高，导致画布内内容变形    使用css设置画布的大小会导致画布按比例缩放你设置的值。（css只是设置canvas在屏幕的显示大小）3.正确设置方法是设置canvas标签的width height属性。 
+&lt;canvas width="450" height="350">&lt;/canvas>
 
-数组的一些操作concat()，...
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2021/04/" class="post-meta__date button">创建于 2021-04-01</a>
-    
-    <span class="separate-dot"></span><a href="/categories/js%E5%9F%BA%E7%A1%80/" class="button">js基础</a>
+注意 没有单位。
+#绘画    moveTo(); //起始点    lineTo(); //路线    stroke(); //结束
+例：    var c=document.getElementById(“myCanvas”);    var ctx=c.getContext(“2d”);    ctx.moveTo(0,0);    ctx.lineTo(200,100);    ctx.stroke();
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2021/04/01/array/" title="数组操作">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数组操作"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/01/array/" title="数组操作">数组操作</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-04-01T12:03:37.000Z" title="发表于 2021-04-01 20:03:37">2021-04-01</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-05-25T12:55:02.087Z" title="更新于 2021-05-25 20:55:02">2021-05-25</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/js%E5%9F%BA%E7%A1%80/">js基础</a></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-comments"></i><a href="/2021/04/01/array/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2021/04/01/array/" itemprop="commentCount"></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">数组操作面试觉得自己实在太垃圾了，就来整理一下常问问题，做人还是要 多总结。
 
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/js/" class="post-tags__link button"># js</a><a href="/tags/%E6%95%B0%E7%BB%84/" class="post-tags__link button"># 数组</a></div> 
-<a href="/2021/04/01/array/" class="post-entry__link">数组操作</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        字符串翻转
-    </h2>
-    
-        <p>
-            字符串翻转面试觉得自己实在太垃圾了，就来整理一下常问问题，做人还是要 多总结。
+数组的一些操作concat()，连接两个或更多的数组，返回结果。arr.concat(12,arr1,arr2,34)
+pop(),删除并返回数组最后一个元素。 arr.pop(),数组为空则不改变数组 返回undefined
+push(),向数组的末尾添加一个或多个元素，返回新的长度。  可以push数组。但不会展开，生成二维数组，arr.push([1,2],34),不像concat会全部展开，而是以数组的形式保存着。
+shift()，删除并返回数组第一个元素。和pop类似。
+unshift(),向数组的开头添加一个或多个元素，返回新的长度。和push类似。
+slice()，从已有的数组中返回选定的元素。
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2021/04/01/reversestring/" title="字符串翻转">     <img class="post_bg" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="字符串翻转"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/04/01/reversestring/" title="字符串翻转">字符串翻转</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-04-01T12:03:37.000Z" title="发表于 2021-04-01 20:03:37">2021-04-01</time><span class="article-meta__separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-05-25T13:03:17.983Z" title="更新于 2021-05-25 21:03:17">2021-05-25</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/js%E5%9F%BA%E7%A1%80/">js基础</a></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-comments"></i><a href="/2021/04/01/reversestring/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2021/04/01/reversestring/" itemprop="commentCount"></span></a><span class="article-meta-label"> 条评论</span></span></div><div class="content">字符串翻转面试觉得自己实在太垃圾了，就来整理一下常问问题，做人还是要 多总结。
 
-
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2021/04/" class="post-meta__date button">创建于 2021-04-01</a>
-    
-    <span class="separate-dot"></span><a href="/categories/js%E5%9F%BA%E7%A1%80/" class="button">js基础</a>
-
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/js/" class="post-tags__link button"># js</a><a href="/tags/js%E5%9F%BA%E7%A1%80/" class="post-tags__link button"># js基础</a><a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="post-tags__link button"># 字符串</a><a href="/tags/%E9%9D%A2%E8%AF%95/" class="post-tags__link button"># 面试</a></div> 
-<a href="/2021/04/01/reversestring/" class="post-entry__link">字符串翻转</a>
-                </div>
-            
-                <div class='post-entry content-card'>
-                    <div class="post-entry__header"></div>
-<div class="post-entry__content">
-    <h2 class="post-entry__title">
-        前端面试问题整理
-    </h2>
-    
-        <p>
-            前端面试题面试觉得自己实在太垃圾了，就来整理一下面试常问问题，做人还是要 多总结。
-
-数据基本类型...
-        </p>
-    
-</div>
-<div class="post-entry__meta">
-    <a href="/archives/2021/03/" class="post-meta__date button">创建于 2021-03-26</a>
-    
-    <span class="separate-dot"></span><a href="/categories/js/" class="button">js</a>
-
- 
-</div>
-<div class="post-entry__tags"><a href="/tags/js/" class="post-tags__link button"># js</a><a href="/tags/css/" class="post-tags__link button"># css</a><a href="/tags/%E9%9D%A2%E8%AF%95/" class="post-tags__link button"># 面试</a><a href="/tags/%E5%9F%BA%E7%A1%80/" class="post-tags__link button"># 基础</a></div> 
-<a href="/2021/03/26/view/" class="post-entry__link">前端面试问题整理</a>
-                </div>
-            
-        
-    </div>
-    
-        <div class="nav">
-            <div class="nav__prev">
-                
-                    <a href="/" class="nav__link">
-                        <div>
-                            <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
-                        </div>
-                        <div>
-                            <div class="nav__label">
-                                Previous
-                            </div>
-                            <div class="nav__title">
-                                第 1 页
-                            </div>
-                        </div>
-                    </a>
-                
+字符串翻转还是比较好实现的，不过还是要多几种思路。1、利用charAt，从尾部遍历，再逐个拼接。
+var result = '';
+for(let i = str.lenght - 1 ;i > 0 ;i--)&#123;
+	result += str.charAt(i);
+&#125;
+return result;
+2、利用数组reverse。 str.split(&#39;&#39;).reverse().join(&quot;&quot;)
+3、利用栈实现栈先进后出、将元素压入栈内，再输出，即可实现翻转。可以利用数组模拟栈。
+</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><a class="extend next" rel="next" href="/page/3/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">blairyue</div><div class="author-info__description">四方上下曰宇，古往今来曰宙</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">34</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">49</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/yue7872" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:yyyzty@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/06/23/butterfly-theme/" title="butterfly主题"><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="butterfly主题"/></a><div class="content"><a class="title" href="/2021/06/23/butterfly-theme/" title="butterfly主题">butterfly主题</a><time datetime="2021-06-23T10:30:58.000Z" title="发表于 2021-06-23 18:30:58">2021-06-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/22/cards-theme/" title="cards主题"><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="cards主题"/></a><div class="content"><a class="title" href="/2021/06/22/cards-theme/" title="cards主题">cards主题</a><time datetime="2021-06-22T07:05:32.000Z" title="发表于 2021-06-22 15:05:32">2021-06-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/22/diary2/" title="日常：每日记录"><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日常：每日记录"/></a><div class="content"><a class="title" href="/2021/06/22/diary2/" title="日常：每日记录">日常：每日记录</a><time datetime="2021-06-21T23:47:15.000Z" title="发表于 2021-06-22 07:47:15">2021-06-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/21/webpack5/" title="webpack学习：生命周期"><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="webpack学习：生命周期"/></a><div class="content"><a class="title" href="/2021/06/21/webpack5/" title="webpack学习：生命周期">webpack学习：生命周期</a><time datetime="2021-06-21T03:01:35.000Z" title="发表于 2021-06-21 11:01:35">2021-06-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/09/diary1/" title="日常：每日记录"><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日常：每日记录"/></a><div class="content"><a class="title" href="/2021/06/09/diary1/" title="日常：每日记录">日常：每日记录</a><time datetime="2021-06-09T00:18:15.000Z" title="发表于 2021-06-09 08:18:15">2021-06-09</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a>
             </div>
-            <div class="nav__next">
-                
-                    <a href="/page/3/" class="nav__link">
-                        <div>
-                            <div class="nav__label">
-                                Next
-                            </div>
-                            <div class="nav__title">
-                                第 3 页
-                            </div>
-                        </div>
-                        <div>
-                            <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
-                        </div>
-                    </a>
-                
-            </div>
-        </div>
-    
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/DevOps/"><span class="card-category-list-name">DevOps</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/React-js/"><span class="card-category-list-name">React.js</span><span class="card-category-list-count">8</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/css/"><span class="card-category-list-name">css</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/diary/"><span class="card-category-list-name">diary</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/hexo/"><span class="card-category-list-name">hexo</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/html/"><span class="card-category-list-name">html</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/js/"><span class="card-category-list-name">js</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/js%E5%9F%BA%E7%A1%80/"><span class="card-category-list-name">js基础</span><span class="card-category-list-count">8</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/DevOps/" style="font-size: 1.1em; color: #999">DevOps</a> <a href="/tags/Loaders/" style="font-size: 1.17em; color: #999c9f">Loaders</a> <a href="/tags/React/" style="font-size: 1.43em; color: #99a6b9">React</a> <a href="/tags/State/" style="font-size: 1.1em; color: #999">State</a> <a href="/tags/canvas/" style="font-size: 1.1em; color: #999">canvas</a> <a href="/tags/css/" style="font-size: 1.23em; color: #999ea6">css</a> <a href="/tags/html/" style="font-size: 1.1em; color: #999">html</a> <a href="/tags/html5/" style="font-size: 1.1em; color: #999">html5</a> <a href="/tags/js/" style="font-size: 1.5em; color: #99a9bf">js</a> <a href="/tags/jsx/" style="font-size: 1.1em; color: #999">jsx</a> <a href="/tags/js%E5%9F%BA%E7%A1%80/" style="font-size: 1.1em; color: #999">js基础</a> <a href="/tags/key/" style="font-size: 1.1em; color: #999">key</a> <a href="/tags/markdown/" style="font-size: 1.17em; color: #999c9f">markdown</a> <a href="/tags/npm/" style="font-size: 1.1em; color: #999">npm</a> <a href="/tags/props/" style="font-size: 1.1em; color: #999">props</a> <a href="/tags/themes/" style="font-size: 1.17em; color: #999c9f">themes</a> <a href="/tags/typora/" style="font-size: 1.1em; color: #999">typora</a> <a href="/tags/webpack/" style="font-size: 1.37em; color: #99a4b2">webpack</a> <a href="/tags/%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86/" style="font-size: 1.1em; color: #999">事件处理</a> <a href="/tags/%E5%85%83%E7%B4%A0/" style="font-size: 1.1em; color: #999">元素</a> <a href="/tags/%E5%88%97%E8%A1%A8/" style="font-size: 1.1em; color: #999">列表</a> <a href="/tags/%E5%9F%BA%E7%A1%80/" style="font-size: 1.1em; color: #999">基础</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 1.1em; color: #999">字符串</a> <a href="/tags/%E5%AE%9E%E4%BE%8B/" style="font-size: 1.1em; color: #999">实例</a> <a href="/tags/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/" style="font-size: 1.1em; color: #999">应用程序</a> <a href="/tags/%E6%89%93%E5%8C%85/" style="font-size: 1.37em; color: #99a4b2">打包</a> <a href="/tags/%E6%93%8D%E4%BD%9C%E7%AC%A6/" style="font-size: 1.1em; color: #999">操作符</a> <a href="/tags/%E6%95%8F%E6%8D%B7%E5%BC%80%E5%8F%91/" style="font-size: 1.1em; color: #999">敏捷开发</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" style="font-size: 1.23em; color: #999ea6">数据类型</a> <a href="/tags/%E6%95%B0%E7%BB%84/" style="font-size: 1.1em; color: #999">数组</a> <a href="/tags/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95%EF%BC%8C%E8%83%A1%E8%A8%80%E4%B9%B1%E8%AF%AD/" style="font-size: 1.17em; color: #999c9f">日常记录，胡言乱语</a> <a href="/tags/%E6%9D%A1%E4%BB%B6%E6%B8%B2%E6%9F%93/" style="font-size: 1.1em; color: #999">条件渲染</a> <a href="/tags/%E6%A8%A1%E5%9D%97/" style="font-size: 1.37em; color: #99a4b2">模块</a> <a href="/tags/%E6%B5%AE%E5%8A%A8/" style="font-size: 1.1em; color: #999">浮动</a> <a href="/tags/%E6%B8%B2%E6%9F%93/" style="font-size: 1.1em; color: #999">渲染</a> <a href="/tags/%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/" style="font-size: 1.17em; color: #999c9f">生命周期</a> <a href="/tags/%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%9F%A5/" style="font-size: 1.1em; color: #999">类型检查</a> <a href="/tags/%E7%BA%A2%E5%AE%9D%E4%B9%A6/" style="font-size: 1.3em; color: #99a1ac">红宝书</a> <a href="/tags/%E7%BB%84%E4%BB%B6/" style="font-size: 1.17em; color: #999c9f">组件</a> <a href="/tags/%E7%BB%84%E5%90%88/" style="font-size: 1.1em; color: #999">组合</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/06/"><span class="card-archive-list-date">六月 2021</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/05/"><span class="card-archive-list-date">五月 2021</span><span class="card-archive-list-count">14</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/04/"><span class="card-archive-list-date">四月 2021</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/03/"><span class="card-archive-list-date">三月 2021</span><span class="card-archive-list-count">9</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/03/"><span class="card-archive-list-date">三月 2020</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">34</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">20.6k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2021-06-23T15:29:51.454Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By blairyue</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>(() => {
+  function loadValine () {
+    function initValine () {
+      let initData = {
+        el: '#vcomment',
+        appId: 't8ltzv6dfc6LY2PyUHg63qji-gzGzoHsz',
+        appKey: 'kLUU303uYNpQC2FUrzrWiBAi',
+      }
+      
+      const valine = new Valine(initData)
+    }
 
+    if (typeof Valine === 'function') initValine() 
+    else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+  }
 
-</main>
-
-            <footer class="footer">
-    
-
-
-    
-    
-        <span id="leancloud_container_site_uv" hidden>
-            <span></span>
-            <span id="leancloud_value_site_uv"></span>
-            <span>Viewers</span>
-            
-        </span>
-    
-    
-        <span id="leancloud_container_site_pv" hidden>
-            <span></span>
-            <span id="leancloud_value_site_pv"></span>
-            <span>Views</span>
-            
-        </span>
-    
-
-     
- 
-
- 
-    
-        
-        <p class="footer-copyright">
-            Copyright © 2020&nbsp;-&nbsp;2021 <a href="/">yyzBlog</a>
-        </p>
-    
-    
-    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
-</footer>
-
-        </div>
-         
-
- 
-
- 
-
- 
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement('script');
-            hm.src = 'https://hm.baidu.com/hm.js?367331809a15dab371e0973bebdcf429';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
- 
-
- 
-
- 
-
-
-
- 
-
-
-    
-    <script>
-        (function () {
-            function getRecord(Counter, target) {
-                return new Promise(function (resolve, reject) {
-                    Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
-                        .then(response => response.json())
-                        .then(({results}) => {
-                            if (results && results.length > 0) {
-                                var record = results[0];
-                                resolve(record);
-                            } else {
-                                Counter('post', '/classes/Counter', {
-                                        target, time: 0
-                                    })
-                                    .then(response => response.json())
-                                    .then(record => {
-                                        resolve(record);
-                                    }).catch(error => {
-                                        console.error('Failed to create', error);
-                                        reject(error);
-                                    });
-                            }
-                        }).catch(error => {
-                            console.error('LeanCloud Counter Error', error);
-                            reject(error);
-                        });
-                })
-            }
-        
-            function buildIncrement(objectId) {
-                return {
-                    "method": "PUT",
-                    "path": `/1.1/classes/Counter/${ objectId }`,
-                    "body": {
-                        "time": {
-                            '__op': 'Increment',
-                            'amount': 1
-                        }
-                    }
-                }
-            }
-        
-            function increment(Counter, incrArr) {
-                return new Promise(function (resolve, reject) {
-                    Counter('post', '/batch', {
-                        "requests": incrArr
-                    }).then((res) => {
-                        resolve(res);
-                    }).catch(error => {
-                        console.error('Failed to save visitor count', error);
-                        reject(error);
-                    });
-                });
-            }
-        
-            function validUV() {
-                var key = 'LeanCloud_UV_Flag';
-                var flag = localStorage.getItem(key);
-                if (flag) {
-                    if (new Date().getTime() - parseInt(flag) <= 86400000) {
-                        return false;
-                    }
-                }
-                localStorage.setItem(key, new Date().getTime().toString());
-                return true;
-            }
-        
-            function addCount(Counter) {
-                var enableIncr = 'leancloud' === 'leancloud';
-                var getterArr = [];
-                var incrArr = [];
-                var pvCtn = document.querySelector('#leancloud_container_site_pv');
-                if (pvCtn || enableIncr) {
-                    var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
-                        incrArr.push(buildIncrement(record.objectId))
-                        var ele = document.querySelector('#leancloud_value_site_pv');
-                        if (ele) {
-                            ele.innerText = record.time + 1;
-                            if (pvCtn) {
-                                pvCtn.style.display = 'inline';
-                            }
-                        }
-                    });
-                    getterArr.push(pvGetter);
-                }
-                var uvCtn = document.querySelector('#leancloud_container_site_uv');
-                if (uvCtn || enableIncr) {
-                    var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
-                        var vuv = validUV();
-                        vuv && incrArr.push(buildIncrement(record.objectId))
-                        var ele = document.querySelector('#leancloud_value_site_uv');
-                        if (ele) {
-                            ele.innerText = record.time + (vuv ? 1 : 0);
-                            if (uvCtn) {
-                                uvCtn.style.display = 'inline';
-                            }
-                        }
-                    });
-                    getterArr.push(uvGetter);
-                }
-                if ('false' === 'true') {
-                    var viewCtn = document.querySelector('#leancloud_container_page_pv');
-                    if (viewCtn || enableIncr) {
-                        var target = decodeURI('/page/2/index.html');
-                        var viewGetter = getRecord(Counter, target).then((record) => {
-                            incrArr.push(buildIncrement(record.objectId))
-                            if (viewCtn) {
-                                var ele = document.querySelector('#leancloud_value_page_pv');
-                                if (ele) {
-                                    ele.innerText = (record.time || 0) + 1;
-                                    viewCtn.style.display = 'inline';
-                                }
-                            }
-                        });
-                        getterArr.push(viewGetter);
-                    }
-                }
-                if (enableIncr) {
-                    Promise.all(getterArr).then(() => {
-                        incrArr.length > 0 && increment(Counter, incrArr);
-                    })
-                }
-            }
-        
-            var app_id = 't8ltzv6dfc6LY2PyUHg63qji-gzGzoHsz';
-            var app_key = 'kLUU303uYNpQC2FUrzrWiBAi';
-            var server_url = 'https://t8ltzv6d.lc-cn-n1-shared.com';
-        
-            function fetchData(api_server) {
-                var Counter = (method, url, data) => {
-                    return fetch(`${ api_server }/1.1${ url }`, {
-                        method,
-                        headers: {
-                                'X-LC-Id': app_id,
-                                'X-LC-Key': app_key,
-                                'Content-Type': 'application/json',
-                            },
-                            body: JSON.stringify(data)
-                    });
-                };
-                addCount(Counter);
-            }
-            var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
-            if (api_server) {
-                fetchData(api_server);
-            } else {
-                fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
-                    .then(response => response.json())
-                    .then(({api_server}) => {
-                        fetchData('https://' + api_server);
-                    });
-            }
-        })();
-    </script>
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
-
-
-    </body>
-</html>
+  window.pjax ? loadValine() : window.addEventListener('load', loadValine)
+})()</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

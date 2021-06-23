@@ -1,179 +1,157 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
-    <meta charset="utf-8">
-
-    
-
-    <!-- 渲染优化 -->
-    <meta name="renderer" content="webkit">
-    <meta name="force-rendering" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="HandheldFriendly" content="True" >
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!--icon-->
-
-    
-        <link rel="shortcut icon" href="/img/my-icon/favicon.ico">
-    
-    
-        <link rel="icon" type="image/png" sizes="16x16" href="/img/my-icon/favicon-16x16.png">
-    
-    
-        <link rel="icon" type="image/png" sizes="32x32" href="/img/my-icon/favicon-32x32.png">
-    
-    
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    
-    
-
-
-    <!-- meta -->
-
-
-<title>React学习记录5：列表&amp;Key | yyzBlog</title>
-
-
-    <meta name="keywords" content="js, React, 列表, key, 渲染">
-
-
-
-
-    <!-- OpenGraph -->
- 
-    <meta name="description" content="列表&amp;Key1、渲染多个组件可以使用map()来遍历数组，将数组中的元素变为列表标签，然后赋值给listItems，再进行插入与渲染。 const numbers &#x3D; [1,2,3,4,5]; const listItems &#x3D; numbers.map((number) &#x3D;&gt; 	&lt;li&gt;&amp;#123;number&amp;#125;&lt;&#x2F;li&gt; );    ReactDOM.render(">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>React学习记录5：列表&amp;Key | yyzBlog</title><meta name="keywords" content="js,React,列表,key,渲染"><meta name="author" content="blairyue"><meta name="copyright" content="blairyue"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="列表&amp;Key1、渲染多个组件可以使用map()来遍历数组，将数组中的元素变为列表标签，然后赋值给listItems，再进行插入与渲染。 const numbers &#x3D; [1,2,3,4,5]; const listItems &#x3D; numbers.map((number) &#x3D;&gt; 	&lt;li&gt;&amp;#123;number&amp;#125;&lt;&#x2F;li&gt; );    ReactDOM.render(">
 <meta property="og:type" content="article">
 <meta property="og:title" content="React学习记录5：列表&amp;Key">
 <meta property="og:url" content="http://yue7872.github.io/2021/05/26/reactstudy5/index.html">
 <meta property="og:site_name" content="yyzBlog">
 <meta property="og:description" content="列表&amp;Key1、渲染多个组件可以使用map()来遍历数组，将数组中的元素变为列表标签，然后赋值给listItems，再进行插入与渲染。 const numbers &#x3D; [1,2,3,4,5]; const listItems &#x3D; numbers.map((number) &#x3D;&gt; 	&lt;li&gt;&amp;#123;number&amp;#125;&lt;&#x2F;li&gt; );    ReactDOM.render(">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png">
 <meta property="article:published_time" content="2021-05-26T03:00:00.000Z">
-<meta property="article:modified_time" content="2021-05-31T05:25:39.690Z">
+<meta property="article:modified_time" content="2021-06-23T13:25:16.497Z">
 <meta property="article:author" content="blairyue">
 <meta property="article:tag" content="js">
 <meta property="article:tag" content="React">
 <meta property="article:tag" content="列表">
 <meta property="article:tag" content="key">
 <meta property="article:tag" content="渲染">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png"><link rel="shortcut icon" href="/img/my-icon/favicon.ico"><link rel="canonical" href="http://yue7872.github.io/2021/05/26/reactstudy5/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu_site_verification" content="code-D160VxMs5A"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?367331809a15dab371e0973bebdcf429";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":100,"languages":{"author":"作者: blairyue","link":"链接: ","source":"来源: yyzBlog","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'React学习记录5：列表&Key',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-06-23 21:25:16'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="/css/style/main.css">
- 
-
-    
-    
-    
-    
-        <link rel="stylesheet" id="hl-default-theme" href="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/themes/prism-okaidia.min.css" media="all">
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-    
-    
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/plugins/line-numbers/prism-line-numbers.min.css" media="all" onload="this.media='all'">
-    
-
-
-    
-
-     
-
-    <!-- custom head -->
-
-<meta name="generator" content="Hexo 5.4.0"></head>
-
-    <body>
-        <div id="app">
-            <header class="header">
-    <div class="header__left">
-        <a href="/" class="button">
-            <span class="logo__text">yyzBlog</span>
-        </a>
-    </div>
-    <div class="header__right">
-        
-            <div class="navbar__menus">
-                
-                    <a href="/" class="navbar-menu button">首页</a>
-                
-                    <a href="/tags/" class="navbar-menu button">标签</a>
-                
-                    <a href="/archives/" class="navbar-menu button">归档</a>
-                
-                    <a href="/contact/" class="navbar-menu button">contact</a>
-                
-                    <a href="/about/" class="navbar-menu button">about</a>
-                
-            </div>
-        
-        
-        
-
-        
-        
-
-        
-
-        
-            <a class="dropdown-icon button" id="btn-dropdown" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path></svg></a>
-            <div class="dropdown-menus" id="dropdown-menus">
-                
-                    <a href="/" class="dropdown-menu button">首页</a>
-                
-                    <a href="/tags/" class="dropdown-menu button">标签</a>
-                
-                    <a href="/archives/" class="dropdown-menu button">归档</a>
-                
-                    <a href="/contact/" class="dropdown-menu button">contact</a>
-                
-                    <a href="/about/" class="dropdown-menu button">about</a>
-                
-            </div>
-        
-    </div>
-</header>
-
-
-            <main class="main">
-    
-
-<div class="post-title">
-    <h1 class="post-title__text">
-        React学习记录5：列表&amp;Key
-    </h1>
-    <div class="post-title__meta">
-        <a href="/archives/2021/05/" class="post-meta__date button">创建于 2021-05-26</a>
-        
-    <span class="separate-dot"></span><a href="/categories/React-js/" class="button">React.js</a>
-
- 
-        
-     
-    <span id="leancloud_container_page_pv" hidden>
-        <span class="separate-dot"></span>
-        <span></span>
-        <span id="leancloud_value_page_pv"></span>
-        <span>Views</span>
-    </span>
-
-    
-
-
- 
-
- 
-    </div>
-</div>
-
-
-
-<article class="post content-card">
-    <div class="post__header"></div>
-    <div class="post__content">
-        <h1 id="列表-amp-Key"><a href="#列表-amp-Key" class="headerlink" title="列表&amp;Key"></a>列表&amp;Key</h1><h2 id="1、渲染多个组件"><a href="#1、渲染多个组件" class="headerlink" title="1、渲染多个组件"></a>1、渲染多个组件</h2><p>可以使用map()来遍历数组，将数组中的元素变为列表标签，然后赋值给listItems，再进行插入与渲染。</p>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">34</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">49</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">yyzBlog</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">React学习记录5：列表&amp;Key</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-05-26T03:00:00.000Z" title="发表于 2021-05-26 11:00:00">2021-05-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-06-23T13:25:16.497Z" title="更新于 2021-06-23 21:25:16">2021-06-23</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/React-js/">React.js</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">386</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>1分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="React学习记录5：列表&amp;Key"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="列表-amp-Key"><a href="#列表-amp-Key" class="headerlink" title="列表&amp;Key"></a>列表&amp;Key</h1><h2 id="1、渲染多个组件"><a href="#1、渲染多个组件" class="headerlink" title="1、渲染多个组件"></a>1、渲染多个组件</h2><p>可以使用map()来遍历数组，将数组中的元素变为列表标签，然后赋值给listItems，再进行插入与渲染。</p>
 <pre class="line-numbers language-jsx" data-language="jsx"><code class="language-jsx"><span class="token keyword">const</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 <span class="token keyword">const</span> listItems <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">number</span><span class="token punctuation">)</span> <span class="token operator">=></span>
 	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">></span></span><span class="token punctuation">&#123;</span>number<span class="token punctuation">&#125;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">></span></span>
@@ -215,378 +193,37 @@ ReactDOM<span class="token punctuation">.</span><span class="token function">ren
 <p>比方说，如果你<a target="_blank" rel="noopener" href="https://zh-hans.reactjs.org/docs/components-and-props.html#extracting-components">提取</a>出一个 <code>ListItem</code> 组件，你应该把 key 保留在数组中的这个 <code>&lt;ListItem /&gt;</code> 元素上，而不是放在 <code>ListItem</code> 组件中的 <code>&lt;li&gt;</code> 元素上。</p>
 </li>
 </ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">blairyue</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://yue7872.github.io/2021/05/26/reactstudy5/">http://yue7872.github.io/2021/05/26/reactstudy5/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://yue7872.github.io" target="_blank">yyzBlog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/js/">js</a><a class="post-meta__tags" href="/tags/React/">React</a><a class="post-meta__tags" href="/tags/%E5%88%97%E8%A1%A8/">列表</a><a class="post-meta__tags" href="/tags/key/">key</a><a class="post-meta__tags" href="/tags/%E6%B8%B2%E6%9F%93/">渲染</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60d33b0ef15ca02f" async="async"></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.png" target="_blank"><img class="post-qr-code-img" src="/img/wechat.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.png" target="_blank"><img class="post-qr-code-img" src="/img/alipay.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/05/26/reactstudy6/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">React学习记录6：如何用React构建应用程序</div></div></a></div><div class="next-post pull-right"><a href="/2021/05/26/reactstudy4/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">React学习记录4：条件渲染</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/05/23/reactstudy1/" title="React学习记录1：JSX与组件"><img class="cover" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-05-23</div><div class="title">React学习记录1：JSX与组件</div></div></a></div><div><a href="/2021/05/24/reactstudy2/" title="React学习记录2：State&生命周期"><img class="cover" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-05-24</div><div class="title">React学习记录2：State&生命周期</div></div></a></div><div><a href="/2021/05/26/reactstudy3/" title="React学习记录3：事件处理"><img class="cover" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-05-26</div><div class="title">React学习记录3：事件处理</div></div></a></div><div><a href="/2021/05/26/reactstudy4/" title="React学习记录4：条件渲染"><img class="cover" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-05-26</div><div class="title">React学习记录4：条件渲染</div></div></a></div><div><a href="/2021/05/26/reactstudy6/" title="React学习记录6：如何用React构建应用程序"><img class="cover" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-05-26</div><div class="title">React学习记录6：如何用React构建应用程序</div></div></a></div><div><a href="/2021/05/28/reactstudy7/" title="React学习记录7：React组件的组合用法"><img class="cover" src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-05-28</div><div class="title">React学习记录7：React组件的组合用法</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">blairyue</div><div class="author-info__description">四方上下曰宇，古往今来曰宙</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">34</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">49</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/yue7872" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:yyyzty@163.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%97%E8%A1%A8-amp-Key"><span class="toc-text">列表&amp;Key</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E6%B8%B2%E6%9F%93%E5%A4%9A%E4%B8%AA%E7%BB%84%E4%BB%B6"><span class="toc-text">1、渲染多个组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E5%9F%BA%E7%A1%80%E5%88%97%E8%A1%A8%E7%BB%84%E4%BB%B6"><span class="toc-text">2、基础列表组件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81key"><span class="toc-text">3、key</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/06/23/butterfly-theme/" title="butterfly主题"><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="butterfly主题"/></a><div class="content"><a class="title" href="/2021/06/23/butterfly-theme/" title="butterfly主题">butterfly主题</a><time datetime="2021-06-23T10:30:58.000Z" title="发表于 2021-06-23 18:30:58">2021-06-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/22/cards-theme/" title="cards主题"><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="cards主题"/></a><div class="content"><a class="title" href="/2021/06/22/cards-theme/" title="cards主题">cards主题</a><time datetime="2021-06-22T07:05:32.000Z" title="发表于 2021-06-22 15:05:32">2021-06-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/22/diary2/" title="日常：每日记录"><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日常：每日记录"/></a><div class="content"><a class="title" href="/2021/06/22/diary2/" title="日常：每日记录">日常：每日记录</a><time datetime="2021-06-21T23:47:15.000Z" title="发表于 2021-06-22 07:47:15">2021-06-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/21/webpack5/" title="webpack学习：生命周期"><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="webpack学习：生命周期"/></a><div class="content"><a class="title" href="/2021/06/21/webpack5/" title="webpack学习：生命周期">webpack学习：生命周期</a><time datetime="2021-06-21T03:01:35.000Z" title="发表于 2021-06-21 11:01:35">2021-06-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/09/diary1/" title="日常：每日记录"><img src="https://cdn.jsdelivr.net/gh/jinan6/PicGo-img/img/20210604113009.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="日常：每日记录"/></a><div class="content"><a class="title" href="/2021/06/09/diary1/" title="日常：每日记录">日常：每日记录</a><time datetime="2021-06-09T00:18:15.000Z" title="发表于 2021-06-09 08:18:15">2021-06-09</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By blairyue</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 't8ltzv6dfc6LY2PyUHg63qji-gzGzoHsz',
+      appKey: 'kLUU303uYNpQC2FUrzrWiBAi',
+      placeholder: '留个评论再走吧！',
+      avatar: 'retro',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: true,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: true,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
 
-    </div>
-    
-    <div class="post__license">
-        <p>
-            <strong>本文作者：</strong>blairYue
-        </p>
-        <p>
-            <strong>
-                本文链接：
-            </strong>
-            <a href="http://yue7872.github.io/2021/05/26/reactstudy5/">http://yue7872.github.io/2021/05/26/reactstudy5/</a>
-        </p>
-        
-    </div>
- 
-    <div class="post-footer__meta"><p>更新于 2021-05-31</p></div> 
-    <div class="post-meta__cats"><a href="/categories/React-js/" class="post-cats__link button">React.js</a><a href="/tags/js/" class="post-tags__link button"># js</a><a href="/tags/React/" class="post-tags__link button"># React</a><a href="/tags/%E5%88%97%E8%A1%A8/" class="post-tags__link button"># 列表</a><a href="/tags/key/" class="post-tags__link button"># key</a><a href="/tags/%E6%B8%B2%E6%9F%93/" class="post-tags__link button"># 渲染</a></div> 
-</article>
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
 
-
-    <div class="nav">
-        <div class="nav__prev">
-            
-                <a href="/2021/05/26/reactstudy6/" class="nav__link">
-                    <div>
-                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
-                    </div>
-                    <div>
-                        <div class="nav__label">
-                            Previous Post
-                        </div>
-                        <div class="nav__title">
-                            React学习记录6：如何用React构建应用程序
-                        </div>
-                    </div>
-                </a>
-            
-        </div>
-        <div class="nav__next">
-            
-                <a href="/2021/05/26/reactstudy4/" class="nav__link">
-                    <div>
-                        <div class="nav__label">
-                            Next Post
-                        </div>
-                        <div class="nav__title">
-                            React学习记录4：条件渲染
-                        </div>
-                    </div>
-                    <div>
-                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
-                    </div>
-                </a>
-            
-        </div>
-    </div>
-
-
-
-    <div class="post__comments content-card" id="comment">
-        
-    <h4>评论</h4>
-    
-    
-    
-    
-    <div id="minivaline_container" class="minivaline_thread"></div>
-
-    
-    
-    
-    
-    
-    
-    
-
-
-    </div>
-
-
-
-</main>
-
-            <footer class="footer">
-    
-
-
-    
-    
-        <span id="leancloud_container_site_uv" hidden>
-            <span></span>
-            <span id="leancloud_value_site_uv"></span>
-            <span>Viewers</span>
-            
-        </span>
-    
-    
-        <span id="leancloud_container_site_pv" hidden>
-            <span></span>
-            <span id="leancloud_value_site_pv"></span>
-            <span>Views</span>
-            
-        </span>
-    
-
-     
- 
-
- 
-    
-        
-        <p class="footer-copyright">
-            Copyright © 2020&nbsp;-&nbsp;2021 <a href="/">yyzBlog</a>
-        </p>
-    
-    
-    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
-</footer>
-
-        </div>
-         
-
- 
-
- 
-
- 
-    <script>
-        var _hmt = _hmt || [];
-        (function() {
-            var hm = document.createElement('script');
-            hm.src = 'https://hm.baidu.com/hm.js?367331809a15dab371e0973bebdcf429';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
- 
-
- 
-
- 
-
-
-
- 
-
-
-    
-    <script>
-        (function () {
-            function getRecord(Counter, target) {
-                return new Promise(function (resolve, reject) {
-                    Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({target})))
-                        .then(response => response.json())
-                        .then(({results}) => {
-                            if (results && results.length > 0) {
-                                var record = results[0];
-                                resolve(record);
-                            } else {
-                                Counter('post', '/classes/Counter', {
-                                        target, time: 0
-                                    })
-                                    .then(response => response.json())
-                                    .then(record => {
-                                        resolve(record);
-                                    }).catch(error => {
-                                        console.error('Failed to create', error);
-                                        reject(error);
-                                    });
-                            }
-                        }).catch(error => {
-                            console.error('LeanCloud Counter Error', error);
-                            reject(error);
-                        });
-                })
-            }
-        
-            function buildIncrement(objectId) {
-                return {
-                    "method": "PUT",
-                    "path": `/1.1/classes/Counter/${ objectId }`,
-                    "body": {
-                        "time": {
-                            '__op': 'Increment',
-                            'amount': 1
-                        }
-                    }
-                }
-            }
-        
-            function increment(Counter, incrArr) {
-                return new Promise(function (resolve, reject) {
-                    Counter('post', '/batch', {
-                        "requests": incrArr
-                    }).then((res) => {
-                        resolve(res);
-                    }).catch(error => {
-                        console.error('Failed to save visitor count', error);
-                        reject(error);
-                    });
-                });
-            }
-        
-            function validUV() {
-                var key = 'LeanCloud_UV_Flag';
-                var flag = localStorage.getItem(key);
-                if (flag) {
-                    if (new Date().getTime() - parseInt(flag) <= 86400000) {
-                        return false;
-                    }
-                }
-                localStorage.setItem(key, new Date().getTime().toString());
-                return true;
-            }
-        
-            function addCount(Counter) {
-                var enableIncr = 'leancloud' === 'leancloud';
-                var getterArr = [];
-                var incrArr = [];
-                var pvCtn = document.querySelector('#leancloud_container_site_pv');
-                if (pvCtn || enableIncr) {
-                    var pvGetter = getRecord(Counter, 'site-pv').then((record) => {
-                        incrArr.push(buildIncrement(record.objectId))
-                        var ele = document.querySelector('#leancloud_value_site_pv');
-                        if (ele) {
-                            ele.innerText = record.time + 1;
-                            if (pvCtn) {
-                                pvCtn.style.display = 'inline';
-                            }
-                        }
-                    });
-                    getterArr.push(pvGetter);
-                }
-                var uvCtn = document.querySelector('#leancloud_container_site_uv');
-                if (uvCtn || enableIncr) {
-                    var uvGetter = getRecord(Counter, 'site-uv').then((record) => {
-                        var vuv = validUV();
-                        vuv && incrArr.push(buildIncrement(record.objectId))
-                        var ele = document.querySelector('#leancloud_value_site_uv');
-                        if (ele) {
-                            ele.innerText = record.time + (vuv ? 1 : 0);
-                            if (uvCtn) {
-                                uvCtn.style.display = 'inline';
-                            }
-                        }
-                    });
-                    getterArr.push(uvGetter);
-                }
-                if ('true' === 'true') {
-                    var viewCtn = document.querySelector('#leancloud_container_page_pv');
-                    if (viewCtn || enableIncr) {
-                        var target = decodeURI('/2021/05/26/reactstudy5/');
-                        var viewGetter = getRecord(Counter, target).then((record) => {
-                            incrArr.push(buildIncrement(record.objectId))
-                            if (viewCtn) {
-                                var ele = document.querySelector('#leancloud_value_page_pv');
-                                if (ele) {
-                                    ele.innerText = (record.time || 0) + 1;
-                                    viewCtn.style.display = 'inline';
-                                }
-                            }
-                        });
-                        getterArr.push(viewGetter);
-                    }
-                }
-                if (enableIncr) {
-                    Promise.all(getterArr).then(() => {
-                        incrArr.length > 0 && increment(Counter, incrArr);
-                    })
-                }
-            }
-        
-            var app_id = 't8ltzv6dfc6LY2PyUHg63qji-gzGzoHsz';
-            var app_key = 'kLUU303uYNpQC2FUrzrWiBAi';
-            var server_url = 'https://t8ltzv6d.lc-cn-n1-shared.com';
-        
-            function fetchData(api_server) {
-                var Counter = (method, url, data) => {
-                    return fetch(`${ api_server }/1.1${ url }`, {
-                        method,
-                        headers: {
-                                'X-LC-Id': app_id,
-                                'X-LC-Key': app_key,
-                                'Content-Type': 'application/json',
-                            },
-                            body: JSON.stringify(data)
-                    });
-                };
-                addCount(Counter);
-            }
-            var api_server = app_id.slice(-9) !== '-MdYXbMMI' ? server_url : `https://${ app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
-            if (api_server) {
-                fetchData(api_server);
-            } else {
-                fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
-                    .then(response => response.json())
-                    .then(({api_server}) => {
-                        fetchData('https://' + api_server);
-                    });
-            }
-        })();
-    </script>
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
-    
-
-    
-    
-    
-
-    
-    <script>
-        function loadComment() {
-            let e, i;
-            (e = document.createElement("script")).src = '/js/MiniValine.min.js',
-            document.body.appendChild(e);
-            e.onload = () => {
-                var minivalineConfig = {"appId":"t8ltzv6dfc6LY2PyUHg63qji-gzGzoHsz","appKey":"kLUU303uYNpQC2FUrzrWiBAi","mode":"xCss","avatarD":"retro","math":true,"enableFlag":true,"master":["85947f1b17a8c872e90bc01764a99268"],"tagMeta":["博主","小伙伴","访客"],"placeholder":"留个评论再走吧！","md":true,"region":true,"enableUA":true,"enableQQ":true,"RecordIP":true,"pageSize":6};
-                minivalineConfig.el = '#minivaline_container';
-                for (var i in minivalineConfig) {
-                    if (minivalineConfig[i] === null) delete minivalineConfig[i];
-                }
-                new MiniValine(minivalineConfig);
-            };
-        }
-    
-        var runningOnBrowser = typeof window !== "undefined";
-        var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
-        var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
-    
-        setTimeout(function () {
-            if (!isBot && supportsIntersectionObserver) {
-                var comment_observer = new IntersectionObserver(function(entries) {
-                    if (entries[0].isIntersecting) {
-                        loadComment();
-                        comment_observer.disconnect();
-                    }
-                }, { threshold: [0] });
-                comment_observer.observe(document.getElementById('comment'));
-            } else {
-                loadComment();
-            }
-        }, 1);
-    </script>
-
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-
-    
-    
-    
-
-
-
-    </body>
-</html>
+if ('Valine' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
