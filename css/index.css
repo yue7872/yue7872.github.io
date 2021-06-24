@@ -1391,7 +1391,7 @@ hr:before {
   left: 5%;
   z-index: 1;
   color: var(--hr-before-color);
-  content: '\f0c4';
+  content: '\f787';
   font-size: 20px;
   line-height: 1;
   -webkit-transition: all 1s ease-in-out;
@@ -3733,7 +3733,7 @@ _:future,
   margin-right: 0.2rem;
 }
 #post-info #post-meta .post-meta-label {
-  margin-right: 0.2rem;
+  display: none;
 }
 #post-info #post-meta a {
   color: var(--light-grey);
