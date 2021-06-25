@@ -188,3 +188,8 @@
     transform: rotate();
   }
 }
+
+
+#post-info #post-meta a {
+  color: var(--light-grey);
+}
