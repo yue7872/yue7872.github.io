@@ -6369,3 +6369,9 @@ blockquote.pullquote.right {
     max-height: 75vh !important;
   }
 }
+#posts-chart {
+  width: 100% !important;
+}
+.vrow .status-bar {
+  color: #f00 !important;
+}
