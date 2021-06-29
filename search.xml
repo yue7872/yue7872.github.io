@@ -5,28 +5,22 @@
     
     <entry>
       <title>feflow套件开发</title>
-      <link href="/webpack/feflow/"/>
-      <url>/webpack/feflow/</url>
+      <link href="/feflow/feflow/"/>
+      <url>/feflow/feflow/</url>
       
         <content type="html"><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="密码错误，请检查后再试。" data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <script id="hbeData" type="hbeData" data-hmacdigest="d51c5886dde9716b53f6b65d112833b0a2b0c1805c3ae0ac51d52f87fad13da9">7d50f9dbafe465f5724b6ef619a260c47305ed988dbffe9b01ab9ee61bc1dce9e0b12478cb8cfce58ba9f14b3663f66850c58b317977329394b77dd28b7ddb13f9b649df5a64d4a1468c18817a90efca132f172bb80419aa96355499928a6fcb950475b6c7e0054ef3571e5959eec83312e41e440de35c49ff90440f22ed3d1dd114e733a49248a702bf0913d0e67c0caf63fd1aed5c7b88ffdb5246e189877a00978a16159f3b43a62d8cf3525bef039486bc997149691e6a56e5448e9fdffb7e2339a5fbdbe9c9cb0884a95a0ccb3df98935c5bcf655ec7069c2a873dbb748df90733d18aa0c8e17be69e60a0aa710ceda44b08e504f08d4cdd72c79e1d5742e75f016030aeefebc19cd83f55b5aee6f23fc2bea8cecd2cf11f5838f06713683e8ed0fe49dc4f55adce1c854db772185bd47247f0510f1c1c881ceff7330d28941de927b6f713b1e216c9d99da842a28e31e18de15d80ca568ae68782e818668c0ed919c7fcb7083c554f2f06a664f197eba0b16bdb3f640454f81fbd04eceab222247d615835d66b57afa2d249c3c2402926b6fbf44783c62d0f387950469bcc8b8159d52e1f6ffbba1cf3ecfdfd98d1ba09a5640d07ff898bdb172813ea9d8ff7c84baccc6cbb6091b2f29e3e03f</script>  <div class="hbe hbe-content">    <div class="hbe hbe-input hbe-input-wave">      <input class="hbe hbe-input-field hbe-input-field-wave" type="password" id="hbePass">      <label class="hbe hbe-input-label hbe-input-label-wave" for="hbePass">        <span class="hbe hbe-input-label-content hbe-input-label-content-wave">您好, 请输入密码.</span>      </label>      <svg class="hbe hbe-graphic hbe-graphic-wave" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>      </svg>    </div>  </div></div><script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       
       
       <categories>
           
-          <category> webpack </category>
+          <category> feflow </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> webpack </tag>
-            
-            <tag> 打包 </tag>
-            
             <tag> feflow </tag>
-            
-            <tag> 套件 </tag>
             
         </tags>
       
