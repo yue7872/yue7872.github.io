@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>jsdelivr加速</title>
+      <link href="/jsdelivr/jsdelivr/"/>
+      <url>/jsdelivr/jsdelivr/</url>
+      
+        <content type="html"><![CDATA[<h2 id="使用jsdelivr加速github文件"><a href="#使用jsdelivr加速github文件" class="headerlink" title="使用jsdelivr加速github文件"></a>使用jsdelivr加速github文件</h2><p>新建一个仓库，clone、提交后，在releases里创建一个版本号。</p><p>此时就可以用jsdelivr加速访问github的文件了。</p><p>使用方法为：</p><p><code>https://cdn.jsdelivr.net/gh/</code>用户名/仓库名@版本号/文件路径</p><p>例如：<a href="https://cdn.jsdelivr.net/gh/yue7872/blogEmoji@1.0/owo.json">https://cdn.jsdelivr.net/gh/yue7872/blogEmoji@1.0/owo.json</a></p><p>如果不使用版本号，则会引用最新资源。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CDN </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>日常：每日记录</title>
       <link href="/diary/diary3/"/>
       <url>/diary/diary3/</url>
