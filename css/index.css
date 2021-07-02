@@ -6356,6 +6356,7 @@ blockquote.pullquote.right {
 }
 #posts-chart {
   width: 100% !important;
+  height: 300px !important;
 }
 .vrow .status-bar {
   color: #f00 !important;
@@ -6365,4 +6366,16 @@ blockquote.pullquote.right {
 }
 #post-meta {
   color: var(--font-color) !important;
+}
+.tk-input textarea {
+  min-height: 200px !important;
+}
+#ghbdages {
+  top: 70px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+#footer-wrap {
+  padding: 1rem 1rem !important;
 }
