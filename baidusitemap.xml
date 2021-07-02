@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yue7872.github.io/webpack/webpack/</loc>
+    <lastmod>2021-07-02T03:04:25.121Z</lastmod>
+  </url>  <url>
+    <loc>http://yue7872.github.io/js/view/</loc>
+    <lastmod>2021-07-02T03:04:14.558Z</lastmod>
+  </url>  <url>
+    <loc>http://yue7872.github.io/theme/cards-theme/</loc>
+    <lastmod>2021-07-02T03:03:47.162Z</lastmod>
+  </url>  <url>
+    <loc>http://yue7872.github.io/js/js-reading2/</loc>
+    <lastmod>2021-07-02T03:02:22.722Z</lastmod>
+  </url>  <url>
+    <loc>http://yue7872.github.io/devops/devops/</loc>
+    <lastmod>2021-07-02T03:01:43.333Z</lastmod>
+  </url>  <url>
     <loc>http://yue7872.github.io/jsdelivr/jsdelivr/</loc>
     <lastmod>2021-07-01T12:41:05.911Z</lastmod>
   </url>  <url>
@@ -31,9 +46,6 @@
     <loc>http://yue7872.github.io/webpack/webpack4/</loc>
     <lastmod>2021-06-25T08:20:20.418Z</lastmod>
   </url>  <url>
-    <loc>http://yue7872.github.io/webpack/webpack/</loc>
-    <lastmod>2021-06-25T08:20:11.753Z</lastmod>
-  </url>  <url>
     <loc>http://yue7872.github.io/webpack/webpack2/</loc>
     <lastmod>2021-06-25T08:20:03.401Z</lastmod>
   </url>  <url>
@@ -42,9 +54,6 @@
   </url>  <url>
     <loc>http://yue7872.github.io/webpack/webpack3/</loc>
     <lastmod>2021-06-24T09:44:56.529Z</lastmod>
-  </url>  <url>
-    <loc>http://yue7872.github.io/js/view/</loc>
-    <lastmod>2021-06-24T09:44:42.356Z</lastmod>
   </url>  <url>
     <loc>http://yue7872.github.io/js/reversestring/</loc>
     <lastmod>2021-06-24T09:44:32.457Z</lastmod>
@@ -85,23 +94,14 @@
     <loc>http://yue7872.github.io/js/js-reading3/</loc>
     <lastmod>2021-06-24T09:43:30.356Z</lastmod>
   </url>  <url>
-    <loc>http://yue7872.github.io/js/js-reading2/</loc>
-    <lastmod>2021-06-24T09:43:24.350Z</lastmod>
-  </url>  <url>
     <loc>http://yue7872.github.io/js/js-reading1/</loc>
     <lastmod>2021-06-24T09:43:05.756Z</lastmod>
-  </url>  <url>
-    <loc>http://yue7872.github.io/devops/devops/</loc>
-    <lastmod>2021-06-24T09:42:34.717Z</lastmod>
   </url>  <url>
     <loc>http://yue7872.github.io/css/csspercentagereference/</loc>
     <lastmod>2021-06-24T09:42:28.177Z</lastmod>
   </url>  <url>
     <loc>http://yue7872.github.io/css/clear/</loc>
     <lastmod>2021-06-24T09:42:16.115Z</lastmod>
-  </url>  <url>
-    <loc>http://yue7872.github.io/theme/cards-theme/</loc>
-    <lastmod>2021-06-24T09:42:10.488Z</lastmod>
   </url>  <url>
     <loc>http://yue7872.github.io/html/canvas/</loc>
     <lastmod>2021-06-24T09:42:03.251Z</lastmod>
