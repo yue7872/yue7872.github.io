@@ -4,6 +4,89 @@
   
     
     <entry>
+      <title>blog搭建：问题记录</title>
+      <link href="/hexo/blogproblems/"/>
+      <url>/hexo/blogproblems/</url>
+      
+        <content type="html"><![CDATA[<h1 id="博客搭建问题记录"><a href="#博客搭建问题记录" class="headerlink" title="博客搭建问题记录"></a>博客搭建问题记录</h1><h2 id="1、评论系统"><a href="#1、评论系统" class="headerlink" title="1、评论系统"></a>1、评论系统</h2><p>更换github里的Custom domain绑定自定义域名后，发现twikoo评论无法正常访问，原因是腾讯云的<em><strong>云开发会校验网页应用请求的来源域名，您需要将来源域名加入到WEB安全域名列表中。</strong></em></p><p>因此需要添加域名，将网站域名加进去即可正常获取评论。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 记录 </tag>
+            
+            <tag> blog </tag>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>alfred学习：问题记录</title>
+      <link href="/alfred/alfredproblems/"/>
+      <url>/alfred/alfredproblems/</url>
+      
+        <content type="html"><![CDATA[<h1 id="alfred问题记录"><a href="#alfred问题记录" class="headerlink" title="alfred问题记录"></a>alfred问题记录</h1><h2 id="1、snippets快速展开失效"><a href="#1、snippets快速展开失效" class="headerlink" title="1、snippets快速展开失效"></a>1、snippets快速展开失效</h2><p>打开偏好设置，发现报错：</p><p><code>loginwindow seems to be preventing text expansion by locking secure input</code></p><p>什么什么安全输入之类的，官方说是有别的应用侵占了安全输入，或者是启动的时候输入密码之类的问题。</p><p>我直接重启电脑可以解决。</p><p>这里是官方文档的解释：<a href="https://www.alfredapp.com/help/troubleshooting/snippets/">Snippets and Text Expansion Troubleshooting</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 记录 </tag>
+            
+            <tag> alfred </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>git学习：问题记录</title>
+      <link href="/git/gitproblems/"/>
+      <url>/git/gitproblems/</url>
+      
+        <content type="html"><![CDATA[<h1 id="git问题记录"><a href="#git问题记录" class="headerlink" title="git问题记录"></a>git问题记录</h1><h2 id="1、git-clone-push时文件过大的问题"><a href="#1、git-clone-push时文件过大的问题" class="headerlink" title="1、git clone/push时文件过大的问题"></a>1、git clone/push时文件过大的问题</h2><p>当仓库文件过大时，git会报一个突然终止的错误，没办法正确提交和下载：</p><p><code>fatal: The remote end hung up unexpectedly</code></p><p>解决方法为设置postBuffer属性：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> config --global http.postBuffer <span class="token number">524288000</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>或者可以尝试再增大一倍：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> config --global http.postBuffer <span class="token number">1048576000</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>重新push或clone即可。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> git </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 记录 </tag>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>jsdelivr加速</title>
       <link href="/jsdelivr/jsdelivr/"/>
       <url>/jsdelivr/jsdelivr/</url>
