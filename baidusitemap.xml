@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yue7872.github.io/webpack/webpack7/</loc>
+    <lastmod>2021-07-21T06:54:50.730Z</lastmod>
+  </url>  <url>
+    <loc>http://yue7872.github.io/webpack/webpackrecord2/</loc>
+    <lastmod>2021-07-21T06:42:57.363Z</lastmod>
+  </url>  <url>
+    <loc>http://yue7872.github.io/webpack/webpackrecord1/</loc>
+    <lastmod>2021-07-21T03:32:07.158Z</lastmod>
+  </url>  <url>
+    <loc>http://yue7872.github.io/webpack/webpack6/</loc>
+    <lastmod>2021-07-20T08:44:18.079Z</lastmod>
+  </url>  <url>
     <loc>http://yue7872.github.io/work/xu-qiu-fen-xi-hui-gu/</loc>
     <lastmod>2021-07-08T09:41:17.482Z</lastmod>
   </url>  <url>
@@ -120,8 +132,5 @@
   </url>  <url>
     <loc>http://yue7872.github.io/js/array/</loc>
     <lastmod>2021-06-24T09:41:57.634Z</lastmod>
-  </url>  <url>
-    <loc>http://yue7872.github.io/webpack/webpackrecord/</loc>
-    <lastmod>2021-06-24T09:31:54.751Z</lastmod>
   </url>
 </urlset>
