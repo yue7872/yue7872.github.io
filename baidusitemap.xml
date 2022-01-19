@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yue7872.github.io/git/zsh-git-kuai-jie-ming-ling/</loc>
+    <lastmod>2022-01-19T02:54:47.882Z</lastmod>
+  </url>  <url>
+    <loc>http://yue7872.github.io/webpack/npm-fa-bao/</loc>
+    <lastmod>2022-01-14T04:10:10.464Z</lastmod>
+  </url>  <url>
+    <loc>http://yue7872.github.io/webpack/webpackproblems/</loc>
+    <lastmod>2021-12-31T04:02:31.654Z</lastmod>
+  </url>  <url>
+    <loc>http://yue7872.github.io/html/canvas/</loc>
+    <lastmod>2021-11-24T11:49:19.583Z</lastmod>
+  </url>  <url>
+    <loc>http://yue7872.github.io/feflow/feflow/</loc>
+    <lastmod>2021-09-03T09:00:49.393Z</lastmod>
+  </url>  <url>
+    <loc>http://yue7872.github.io/vite/vite/</loc>
+    <lastmod>2021-08-17T07:14:25.611Z</lastmod>
+  </url>  <url>
+    <loc>http://yue7872.github.io/css/css-gu-ding-tu-pian-bi-li/</loc>
+    <lastmod>2021-08-16T08:50:35.736Z</lastmod>
+  </url>  <url>
+    <loc>http://yue7872.github.io/npm/npm-ban-ben/</loc>
+    <lastmod>2021-07-30T06:18:19.469Z</lastmod>
+  </url>  <url>
     <loc>http://yue7872.github.io/css/z-index-shi-xiao/</loc>
     <lastmod>2021-07-29T06:32:28.363Z</lastmod>
   </url>  <url>
     <loc>http://yue7872.github.io/webpack/webpack-gong-neng/</loc>
     <lastmod>2021-07-26T11:02:33.484Z</lastmod>
-  </url>  <url>
-    <loc>http://yue7872.github.io/webpack/webpackproblems/</loc>
-    <lastmod>2021-07-24T07:45:48.328Z</lastmod>
   </url>  <url>
     <loc>http://yue7872.github.io/docker/docker/</loc>
     <lastmod>2021-07-22T12:16:55.417Z</lastmod>
@@ -49,9 +70,6 @@
     <loc>http://yue7872.github.io/webpack/webpack-dai-ma-fen-xi/</loc>
     <lastmod>2021-07-22T06:35:44.714Z</lastmod>
   </url>  <url>
-    <loc>http://yue7872.github.io/webpack/npm-fa-bao/</loc>
-    <lastmod>2021-07-22T06:35:29.792Z</lastmod>
-  </url>  <url>
     <loc>http://yue7872.github.io/webpack/webpack-sheng-ming-zhou-qi/</loc>
     <lastmod>2021-07-22T06:35:16.043Z</lastmod>
   </url>  <url>
@@ -91,9 +109,6 @@
     <loc>http://yue7872.github.io/diary/diary3/</loc>
     <lastmod>2021-06-30T01:37:15.789Z</lastmod>
   </url>  <url>
-    <loc>http://yue7872.github.io/feflow/feflow/</loc>
-    <lastmod>2021-06-29T11:09:51.821Z</lastmod>
-  </url>  <url>
     <loc>http://yue7872.github.io/diary/diary2/</loc>
     <lastmod>2021-06-29T11:09:48.901Z</lastmod>
   </url>  <url>
@@ -132,9 +147,6 @@
   </url>  <url>
     <loc>http://yue7872.github.io/css/clear/</loc>
     <lastmod>2021-06-24T09:42:16.115Z</lastmod>
-  </url>  <url>
-    <loc>http://yue7872.github.io/html/canvas/</loc>
-    <lastmod>2021-06-24T09:42:03.251Z</lastmod>
   </url>  <url>
     <loc>http://yue7872.github.io/js/array/</loc>
     <lastmod>2021-06-24T09:41:57.634Z</lastmod>
