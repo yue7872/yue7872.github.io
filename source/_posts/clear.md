@@ -1,7 +1,12 @@
 ---
 title: 清除浮动的方法
-date: 3/21/2021 6:24:40 PM 
+date: '3/21/2021 6:24:40 PM'
 tags:
+  - css
+  - 浮动
+  - html
+categories: css
+abbrlink: css
 ---
 
 # 清除浮动

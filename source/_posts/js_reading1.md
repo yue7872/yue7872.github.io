@@ -1,13 +1,18 @@
 ---
 title: js读书笔记系列（一）
-date: 2021-03-18 
 tags:
+  - js
+  - 红宝书
+  - 读书笔记
+categories: js基础
+abbrlink: js
+date: 2021-03-18 00:00:00
 ---
 
 
 
 面试觉得自己实在太*垃圾*了，就来看看基础，做人还是要 **多读书**。
-*****  
+*****
 ## javascript实现
 
 完整的javascript由以下三部分实现：
@@ -39,7 +44,7 @@ html-head-title-Sample Page
 ##### 2.1 DOM级别
 - DOM1：（目标主要是映射文档结构）  
  1、 DOM核心：规定了如何映射基于XML的文档结构  
- 2、 DOM HTML：在DOM核心基础上进行拓展，添加了针对HTML的对象和方法  
+    2、 DOM HTML：在DOM核心基础上进行拓展，添加了针对HTML的对象和方法  
    
 - DOM2:
 1、 DOM视图（Views）：定义了追踪不同文档（应用css之前和之后的文档）视图的接口  

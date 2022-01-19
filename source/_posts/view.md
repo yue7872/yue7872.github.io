@@ -1,21 +1,27 @@
 ---
 title: 前端面试问题整理
-date: 3/26/2021 4:31:14 PM 
+date: '3/26/2021 4:31:14 PM'
 tags:
+  - js
+  - css
+  - 基础
+  - 面试
+categories: js
+abbrlink: js
 ---
 
 # 前端面试题
 
 面试觉得自己实在太*垃圾*了，就来整理一下面试常问问题，做人还是要 **多总结**。
-*****  
+*****
 
 # 数据基本类型和引用类型
 基本类型：undefined;null;string;number;boolean。
 引用类型：基本类型之外的。
 参见：[链接](https://www.jb51.net/article/65911.htm)
 
-![基本类型](../img/type1.png)
-![引用类型](../img/type2.png)
+![基本类型](/img/post/type1.png)
+![引用类型](/img/post/type2.png)
 
 # BFC相关
 

@@ -1,11 +1,16 @@
 ---
 title: markdown使用
-date: 2020-03-17 17:24:04
 tags:
+  - markdown
+  - 规范
+  - 语法
+categories: 语法规范
+abbrlink: markdown
+date: 2020-03-17 17:24:04
 ---
 
 > 这里可以看到官方的 Markdown 语法规则文档，当然，后文我也会用自己的方式阐述这些语法的具体用法。
-hello[语法规则地址](https://blog.csdn.net/witnessai1/article/details/52551362)
+[语法规则地址](https://blog.csdn.net/witnessai1/article/details/52551362)
 
 ```
 几个＃就表示几级标题 三个`框起来就是代码框

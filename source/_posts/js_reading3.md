@@ -1,13 +1,19 @@
 ---
 title: js读书笔记系列（三）
-date: 2021-03-20
 tags:
+  - js
+  - 红宝书
+  - 读书笔记
+  - 数据类型
+categories: js基础
+abbrlink: js
+date: 2021-03-20 00:00:00
 ---
 
 
 
 面试觉得自己实在太*垃圾*了，就来看看基础，做人还是要 **多读书**。
-*****  
+*****
 # 基本概念
 
 ### 1. 语法   
@@ -76,7 +82,7 @@ typeof (iData + ' Wisen'); // 'string'
 另外存在一个例外：在 Web 领域中被归类为对原 ECMA JavaScript 标准的“故意侵犯”。（据说已废弃）
 ``` bash
 typeof document.all === 'undefined';
-``` 
+```
 
 #### undefined
 ``` bash
@@ -84,7 +90,7 @@ var message; // 这个变量声明后默认取得undefined值
 // var age； //这个变量未定义
 alert(message); // "undefined" 
 alert(age); //"错误"
-``` 
+```
 #### undefined与mull
 在JavaScript中，将一个变量赋值为undefined或null，老实说，几乎没区别。undefined和null在if语句中，都会被自动转为false，相等运算符甚至直接报告两者相等。
 ``` bash
@@ -98,7 +104,7 @@ if (!null)
 
 undefined == null
 // true
-``` 
+```
 最初设计时：null是表示一个无的对象，转为数值时为0；undefined是一个表示无的原始值，转为数值时为NaN。
 ``` bash
 Number(null)
@@ -112,7 +118,7 @@ Number(undefined)
 
 5 + undefined
 // NaN
-``` 
+```
 ##### 目前的用法
 但是，上面这样的区分，在实践中很快就被证明不可行。目前，null和undefined基本是同义的，只有一些细微的差别。
 
@@ -146,4 +152,3 @@ o.p // undefined
 var x = f();
 x // undefined
 ```
-​
