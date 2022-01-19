@@ -26,7 +26,7 @@
   algolia: undefined,
   localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
   translate: undefined,
-  noticeOutdate: {"limitDay":100,"position":"top","messagePrev":"本文最后更新于","messageNext":"天前，内容可能已不再适用！"},
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"本文最后更新于","messageNext":"天前，内容可能已不再适用！"},
   highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
   copy: {
     success: '复制成功',
@@ -291,7 +291,7 @@ window.addEventListener('load',preloader.endLoading())</script><div class="js-pj
       init()
       bool && $countDom && setTimeout(getCount,0)
     } else {
-      getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(()=> {
+      getScript('https://cdn.jsdelivr.net/npm/twikoo@1.4.15/dist/twikoo.all.min.js').then(()=> {
         init()
         bool && $countDom && setTimeout(getCount,0)
       })
