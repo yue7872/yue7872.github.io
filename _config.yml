@@ -178,7 +178,7 @@ douban:
 history_calendar:
   priority: 4
   enable: true
-  enable_page: all
+  enable_page: /
   layout:
     type: class
     name: sticky_layout
