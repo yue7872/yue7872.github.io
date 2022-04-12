@@ -38,3 +38,9 @@ git使用pull命令/clone命令等都会出现错误，原因：没有配置ssh�
 git config --global http.sslVersion tlsv1.2 
 ```
 
+## 3、git删除本地除了master所有分支
+
+```bash
+git checkout master
+git branch | grep -v 'master' | xargs git branch -D
+```

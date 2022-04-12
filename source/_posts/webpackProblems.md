@@ -231,7 +231,7 @@ Error: Function rgb is missing argument $green.
 {
   loader: 'sass-loader',
   options: {
-    implementation: require('sass'), //采用dark-sass替换掉node-sass
+    implementation: require('sass'), //采用dart-sass替换掉node-sass
   },
 },
 ```
@@ -275,9 +275,45 @@ npm install copy-webpack-plugin@6.2.1 --save
 
 将image-webpack-loader版本降至6.0.0
 
-### 
+
 
 Error: spawn /Users/josiezhang/WorkSpace/cloud_tencent_ui/oya/node_modules/mozjpe
 g/vendor/cjpeg ENOENT
 
 执行 npm rebuild
+
+### 16、路径存在，但resolve-url-loader识别不到
+
+cssloader 的 importLoaders 数过小，设置为之后的loader数。
+
+### 17、pnpm链接的形式，会导致组件库换肤出问题？
+
+### 18、.DS_Store
+
+.DS_Store是Mac OS保存文件夹的自定义属性的隐藏文件，如文件的图标位置或背景色，相当于Windows的desktop.ini。
+
+1、禁止.DS_store生成：打开   “终端” ，复制黏贴下面的命令，回车执行，重启Mac即可生效。
+
+```bash
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
+```
+
+2、恢复.DS_store生成： 
+
+```bash
+defaults delete com.apple.desktopservices DSDontWriteNetworkStores
+```
+
+### 19、image-webpack-loader报错
+
+```js
+ModuleBuildError: Module build failed (from ./node_modules/.pnpm/image-webpack-loader@6.0.0/node_modules/image-webpack-loader/index.js):
+RangeError: Maximum call stack size exceeded
+```
+
+压缩图片出了问题，是因为svg里只写了base64的image，导致svg无法被压缩。
+
+解决方案：
+
+关闭图片压缩 或者 将这张svg图放到不压缩的文件夹下
+

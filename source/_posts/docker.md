@@ -354,3 +354,13 @@ docker container exec -it [containerID] /bin/bash
 docker container cp [containID]:[/path/to/file] .
 ```
 
+## 9、docker设置时区
+
+```dockerfile
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo 'Asia/Shanghai' >/etc/timezone
+```
+
+## 10、内网docker推送
+
+http://wiki.kubernetes.oa.com/quickstart/csighub.html
+
