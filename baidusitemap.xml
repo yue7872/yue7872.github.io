@@ -2,15 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://yue7872.github.io/git/zsh-git-kuai-jie-ming-ling/</loc>
-    <lastmod>2022-01-19</lastmod>
+    <lastmod>2022-04-08</lastmod>
+  </url>
+  <url>
+    <loc>http://yue7872.github.io/css/css-wen-ti-ji-lu/</loc>
+    <lastmod>2022-04-06</lastmod>
+  </url>
+  <url>
+    <loc>http://yue7872.github.io/git/git-pei-zhi-ssh/</loc>
+    <lastmod>2022-04-06</lastmod>
+  </url>
+  <url>
+    <loc>http://yue7872.github.io/linux/linux-ming-ling/</loc>
+    <lastmod>2022-04-02</lastmod>
+  </url>
+  <url>
+    <loc>http://yue7872.github.io/lian-jie-qian-zhui/https/</loc>
+    <lastmod>2022-03-31</lastmod>
+  </url>
+  <url>
+    <loc>http://yue7872.github.io/vue/sao-lei/</loc>
+    <lastmod>2022-03-29</lastmod>
+  </url>
+  <url>
+    <loc>http://yue7872.github.io/webpack/webpackproblems/</loc>
+    <lastmod>2022-03-07</lastmod>
+  </url>
+  <url>
+    <loc>http://yue7872.github.io/git/gitproblems/</loc>
+    <lastmod>2022-03-02</lastmod>
+  </url>
+  <url>
+    <loc>http://yue7872.github.io/docker/docker/</loc>
+    <lastmod>2022-02-22</lastmod>
+  </url>
+  <url>
+    <loc>http://yue7872.github.io/js/js/</loc>
+    <lastmod>2022-02-11</lastmod>
+  </url>
+  <url>
+    <loc>http://yue7872.github.io/hexo/blogproblems/</loc>
+    <lastmod>2022-02-10</lastmod>
   </url>
   <url>
     <loc>http://yue7872.github.io/webpack/npm-fa-bao/</loc>
     <lastmod>2022-01-14</lastmod>
-  </url>
-  <url>
-    <loc>http://yue7872.github.io/webpack/webpackproblems/</loc>
-    <lastmod>2021-12-31</lastmod>
   </url>
   <url>
     <loc>http://yue7872.github.io/html/canvas/</loc>
@@ -39,14 +75,6 @@
   <url>
     <loc>http://yue7872.github.io/webpack/webpack-gong-neng/</loc>
     <lastmod>2021-07-26</lastmod>
-  </url>
-  <url>
-    <loc>http://yue7872.github.io/docker/docker/</loc>
-    <lastmod>2021-07-22</lastmod>
-  </url>
-  <url>
-    <loc>http://yue7872.github.io/git/gitproblems/</loc>
-    <lastmod>2021-07-22</lastmod>
   </url>
   <url>
     <loc>http://yue7872.github.io/react/proptypes/</loc>
@@ -107,10 +135,6 @@
   <url>
     <loc>http://yue7872.github.io/work/xu-qiu-fen-xi-hui-gu/</loc>
     <lastmod>2021-07-08</lastmod>
-  </url>
-  <url>
-    <loc>http://yue7872.github.io/hexo/blogproblems/</loc>
-    <lastmod>2021-07-05</lastmod>
   </url>
   <url>
     <loc>http://yue7872.github.io/alfred/alfredproblems/</loc>
